@@ -2,127 +2,105 @@
 
 ## Charakteristika a parametry procesorů IBM-PC kompatibilní
 
-### i8086
-- první v r. 1969 od Intelu - Intel 4004 - 4bit s fr. 108 KHz
-- v r. 1977
-- první 16bit proc.
-- zpětně kompatibilní s i8080
-- první s architekturou x86
-- 16b vnitřní architektura
-- 16b datová sběrnice
-- 20b adresní sběrnice
-- umí adresovat až 2^20 (1MiB) operační paměti
+### i8086 (1980)
+- První 16b procesor
+- 16b Datová sběrnice
+- 20b Adresní sběrnice
+- 29k Tranzistorů
+- Zpětně kompatibilní s i8080
+- První procesor s architekturou x86
+- Umí adresovat až 2^20 (Toto se určuje podle adresní sběrnice) (1MiB) operační paměti
 
-#### Adresovaní v reálném modu
-- skladá se ze dvou 16b složek - segment, offset
+#### Adresovaní v reálném režimu
+- Skladá se ze dvou 16b složek - segment, offset (zapisuje se jako segment : offset)
+- Výsledná adresa vzejde tak, že se segment vynásobí 10 (16 decimálně) a přičte offset
 ```
-segment	A 8 F 3 0 	- 16 - proto se posune
-offset    2 4 5 E
-  	    A B 3 8 E => zápis - segment:offset => A8F3:245E
+Například A859 : 145C
 
-	- vznikne výsledná fyzická 20b adresa -> segment x 16 + offset
+1. Segment se vynásobí 10 hex (16 dec)
+A859 * 10 = A8590
+
+2. Výsledek se sečte s offsetem
+A8590 + 145C = A99EC
+
+3. Výsledek součtu je výsledná fyzická adresa
+A99EC
+
 ```
-
-### i286
-- Frekvence 6 – 25Mhz 
+### i286 (1981)
 - První setup BIOS
-- v r. 1981
-- 130 000 tranzistorů
-- 16b procesor 16b datovou a 24b adresní sběrnicí
-- umožňuje práci ve dvou režimech
-- realný režim
-  - plně kompatibilní s procesorem 8086
-  - 20b adresa (může adresovat 1MiB operační paměti)
-  - tvoří se stejně jako u 8086
+- 130k tranzistorů
+- 16b Procesor 
+- 16b Datová sběrnice
+- 24b Adresní sběrnice
+- Přišel s novým režimem (Chráněný režim)
+- Realný režim
+  - Plně kompatibilní s procesorem 8086
+  - 20b adresa (může adresovat 1MiB operační paměti (2^20))
+  - Tvoří se stejně jako u 8086
 
-- chraněný režim
-  - nový režim, nekompatibilní s 8086
-  - adresa se tvoří ze dvou 16b složek (selektor a offset) za pomoci tabulek 
-  - vysledná adresa je 24b (16MiB ram)
+- Chraněný režim
+  - Nový režim, nekompatibilní s 8086
+  - Adresa se tvoří ze dvou 16b složek (selektor a offset) za pomoci tabulek 
+  - Vysledná adresa je 24b (16MiB ram (2^24))
 
-### i386
-
-- 1983
-- Frekvence 16-40 Mhz
-- první Multitasking
-- první Použítí cahce na zákl. Desce
-- prvni 32b procesor
-- 32b datová a 32 adresní sběrnice
-- 275 000 tranzistorů
-- umí 3 režimy
-- reálný - stejný jako 8086
-- chraněný režim
-  - výsledná adresa je 32b (4GiB op. pam.)
-  - adresa se tvoří ze selektoru a offsetu
-  - je rozšířeny o strankovaní - převádí to lineární adresu ve vzdálené paměti na fyzickou adresu
-- virtuální režim
-  - funguje podobně jako 8086
-  - možnost virtualní paměti 1MB, může uložit kdekoli do 4GiB adresního prostoru
-
-
-### i486
-
-**Prakticky i80386, ale s FPU**
-- optimalizovaná 386 s interní cache a numerický koprocesor 80387
-- 32bitovy procesor, 32bit adresní sběrnice, 32bit datová sběrnice
-- 1,25 milionů tranzistorů
-- spálená historie -> 80487 - že vyráběly z plnohodnotných CPU mat. koprocesory tím, že v nich něco spálili
-- byli i procesory 80486 dx2 a dx4
+### i386 (1983)
+- První 32b Procesor
+- 32b Adresní běrnice
+- 32b Datová sběrnice
+- ***První Multitasking***
+- První Použítí cahce na základní desce
+- 275k Tranzistorů
+- Nový režim (Virtuální)
+- Reálný - stejný jako 8086
+- Chraněný režim
+  - Výsledná adresa je 32b (4GiB RAM (2^32))
+  - Adresa se tvoří ze selektoru a offsetu
+  - Je rozšířeny o strankovaní - Převádí to lineární adresu ve vzdálené paměti na fyzickou adresu. Všechny adresy nemusí ukazovat na fyzickou paměť, některé mohou být odswapovány na pevný disk (virtuální paměť)
+- Virtuální režim
+  - Funguje podobně jako 8086
+  - Možnost virtualizovat 1Mib, může uložit kdekoli do 4GiB adresního prostoru a spustit v něm reálný mód
 
 
-### Intel Pentium
+### i486 (1989)
+**Prakticky i80386, která má navíc interní cache a numerický koprocesor (FPU)**
+- 1,2M Tranzistorů
+- Později vznikly procesory i80486dx2 a i80486dx4 kdy číslo 2 a 4 udává tzv. násobič (kolikrát běží jádro procesoru rychleji, než sběrinice FSB (Front Side Bus))
+- Existoval i procesor i80486sx oficiálně bez FPU, reálně byl FPU pouze spálený.
 
-1991, D-Bus – 64b, A-Bus – 32b, Frekvence 60 – 200Mhz
 
-Má dvě větve ALU – výkon má tedy 2x větší, ale na stejné frekvenci
-- Pentium
-- 3,1 milionů tranzistorů
-- rok 1993
-- napájecí napětí -> 3,3V
-- 32bit procesor, 64bit datová sběrnice, 32bit adresní sběrnice
-- 1 superskalární procesor -> 10x - během 1 taktu udělá 2 instrukce naraz
-- obsahuje 16KiB cache paměti
-- rozdělená na:
+### Intel Pentium 1 (1993)
+- 32b Procesor
+- 64b Datová sběrnice 
+- 32b Adresní sběrnice
+- 3,1M Tranzistorů
+- První superskalární procesor (2 Instrukční fronty (během jednoho taktu může dokončit až 2 instrukce))
+- Zaveden Branch Target Buffer (Dynamické předvídání skoků) 
+- 16KiB Cache paměť
   - 8 KiB na data
   - 8 KiB na insturkce
+- U pozdějších verzí se snižuje napájecí napětí na 3,3V
 
-### Pentium Pro
-- pro servery, výkonné pracovní stanice
-- rok 1995
+### Pentium Pro (1995)
+- Pro servery, výkonné pracovní stanice
 
-##### Pentium MMX
-- rozšířeni instrukcní sady
-- pro multimediální výpočty
-- rok 1997
-- technologie SIMD
+##### Pentium MMX (Multi Media Extension) (1997)
+- Rozšířeni instrukcní sady
+- Pro multimediální výpočty
+- Technologie SIMD (Simple Instruction Data), která umožňuje práci s více čísly najednou
 
-### AMD K5
+### Pentium 2 (1997)
+- L2 Cache 256KB
+- Levnější varianta - Intel Celeron původně bez L2, později se 128KB L2 Cache
 
-1997 Během 1. taktu dvě instrukce, dynamické přepínání skoku, Pipelining – Postupně se instrukce
-zpracovává více jednotkami
+### Pentium 3 (1999)
+- Nové instrukční sady SSE
 
-### Pentium 2
+### Pentium 4 (2000)
+- Dvaceti stupňový pipelining
+- HyperThreading (Logicky se jádro tváří jako 2 jádra)
 
-1997, PAE – Page address extension, f = 233 – 500 Mhz, A – Bus = 32 b +4 PAE, D-Bus = 64b
-Cache již v pouzdru CPU L1 i L2, L1 u jádra (stejná frekvence), L2 mimo (½ frekvence)
-
-- odlehčená verze - Celeron - bez L2 cache, pase 128Kib L2 cache
-
-### Pentium 3
-
-1999, f = až 1.4 Ghz, D – bus = 64b, A -bus = 32 + 4
-- rozšíření instrukční sady SSE
 ```
-- ID na internetoch - každý procesor měl jedinečné ID a byl dohledatelný, 
-byla kolem toho nějaká aféra podle Pilčíka **Merge comment: FACT CHECK NEEDED**
-```
-
-### Pentium 4
-
-2001, HyperThreading – rychlé přepínání mezi dvěmi sadami registrů, frekvence až 3.6GHz,
-d-bus - 64b, a-bus – 32 +4 b
-- SSE2
-
 ### Intel CORE
 
 2006+, D-bus i A - bus 64b, frekvence až 4-5 GHz
@@ -147,6 +125,7 @@ Core i
 - K6-2 - rozšíření 3D Now!
 - K7 - nová architektura, 3 FPU, prodávaný jako Athlon
 - K8 - AMD Hammer / Athlon 64 / Opheron - pro servery
+```
 
 ## Paměťový prostor, cache, módy činnosti
 
