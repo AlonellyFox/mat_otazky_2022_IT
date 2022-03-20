@@ -242,7 +242,6 @@ Původně přerušení sloužilo k obsluze hardwarových zařízení, které tak
 (tj. odebrat z vyrovnávací paměti vstupně-výstupního zařízení data nebo do ní další data nakopírovat,
 odtud označení vnější přerušení). Později byla přidána vnitřní přerušení, která vyvolává sám procesor,
 který tak oznamuje chyby vzniklé při provádění strojových instrukcí a synchronní softwarová přerušení
-
 vyvolávaná speciální strojovou instrukcí, která se obvykle používají pro vyvolání služeb operačního
 systému.
 
@@ -344,7 +343,7 @@ procesoru zatížena prací.
 
 ## Jednotky Procesoru
 
-ALU, FPU, Řadič – zajišťuje součinnost jednotlivých součástí procesoru , Vektorová jednotka –
+ALU (Arithmetic Logic Unit), FPU (Floating-Point Unit), Řadič – zajišťuje součinnost jednotlivých součástí procesoru , Vektorová jednotka –
 matematický koprocesor, registry
 
 ## HyperThreading
@@ -362,17 +361,17 @@ Rychle přepíná mezi dvěma sadami registrů.
 
 ## Možnosti zvětšování výkonu procesoru
 
-- HyperThreading
+- HyperThreading - Viz. předchozí téma
 - Superskalarita – některé jednotky jsou v procesoru víckrát
-- Přetaktování,
+- Přetaktování - Zvýšení taktů procesoru
 - Rozšíření šířky slova – 32bit, 64bit
-- zefektivnění mikrokódu
-- Predigce skoků – jakési předvídání skoků. Základem je myšlenka, že skoky jsou většinou 	ve smyčkách a reagují na nějakou podmínku, která 10x vyjde a 1x nevyjde.
-- pipelining - zpracování 2 instrukcí najednou
-- přidání víc jader
+- Zefektivnění mikrokódu
+- Predikce skoků – jakési předvídání skoků. Základem je myšlenka, že skoky jsou většinou 	ve smyčkách a reagují na nějakou podmínku, která 10x vyjde a 1x nevyjde.
+- Pipelining - zpracování 2 instrukcí najednou
+- Přidání víc jader
   - na určité operace jsou vyhrazené a duplikované specializované části procesoru - FPU, ALU
   - instrukce nejdou zpracovávat paralelně - musí se počkat na dokončení rozpracované instrukce
-- velikost procesorové cache - propojuje procesor s RAMkama
+- Velikost procesorové cache - propojuje procesor s RAM
 
 ```
 Autor: Jiří Jungwirth
