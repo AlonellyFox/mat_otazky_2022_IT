@@ -130,11 +130,9 @@ Core i
 ## Paměťový prostor, cache, módy činnosti
 
 ### Paměťový prostor
-
 Dělí se na paměť uživatelskou, paměť systémovou, a paměť dat. Do uživatelské paměti se ukládá
-uživatelský program. Tato paměť bývá typu EPROM nebo EEPROM a mívá kapacitu řádově od
-desítek kB až po jednotky MB u modulárních programovatelných automatů, u kompaktních
-programovatelných automatů spíše v desítkách kB. V systémové paměti je umístěn systémový
+uživatelský program. Tato paměť bývá typu EPROM (Eraseable Programmable Read-Only Memory) nebo EEPROM (Electrically Erasable Read-Only Memory) a mívá kapacitu řádově od
+desítek kB až po jednotky MB. V systémové paměti je umístěn systémový
 program. Tato paměť bývá rovněž typu EPROM. V paměti dat, která musí být typu RAM (RWM), jsou
 umístěny uživateli dostupné uživatelské registry, zápisníkové registry (merkery, flagy), čítače, časovače
 a většinou i vyrovnávací registry pro obrazy vstupů a výstupů. Počet těchto registrů výrazně ovlivňuje
@@ -142,7 +140,6 @@ možnosti programovatelného automatu. Adresovatelný prostor vymezený pro vstu
 počet připojitelných periferních jednotek. Důležitým parametrem jsou i rozsahy čítačů a časovačů.
 
 ### Cache
-
 Cache (též mezipaměť) je v informatice označení pro hardwarovou nebo softwarovou součást počítače,
 která uchovává data a tím následující přístup k těmto datům může být rychlejší. Od vyrovnávací paměti
 (bufferu) se cache liší tím, že může poskytovat data v ní uložená opakovaně (zatímco vyrovnávací
@@ -151,7 +148,7 @@ protože obě funkce mohou splývat.
 
 Cache je tvořena (relativně) rychlou pamětí, která je však dražší. Proto má cache menší velikost, než
 úložný prostor, ke kterému zrychluje přístup. Optimalizací úspěšného využití cache lze dosáhnout
-vyššího výkonu zařízení (počítače). Hardwarovou cache najdeme v mikroprocesorech nebo pevných
+vyššího výkonu zařízení. Hardwarovou cache najdeme v mikroprocesorech nebo pevných
 discích. Cache může být softwarově vytvořena v operační paměti.
 
 
