@@ -1,5 +1,6 @@
 # 18. Desktopové programování v jazyku Java (SE)
-Zadání: Syntaxe, konstrukce funkce, práce se standardním vstupem a výstupem, proměnné a datové typy, řídicí struktury.
+
+> Syntaxe, konstrukce funkce, práce se standardním vstupem a výstupem, proměnné a datové typy, řídicí struktury.
 Třídy, dědičnost, zapouzdření. Výjimky a zpracování. Jazyk UML, use case, diagram tříd, testování FuT, InT, UAT.
 
 ---
@@ -445,8 +446,6 @@ try {
 ## Jazyk UML, use case, diagram tříd, testování FuT, InT, UAT.
 
 ? xd
-
-<!-- TODO doplnit info o UML -->
 
 ```
 Autor: Adam Žluva

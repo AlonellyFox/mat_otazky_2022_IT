@@ -152,3 +152,28 @@ Prideluje aplikacim ID a prideluje aplikacim prostredky (pamet, procesor, čas)
 
 sorry for shit spelling, byl jsem rád že jsem ho chápal a stíhal zapisovat na phone ok dik cs
 -->
+
+---
+
+# 15P
+Haplova prezentace by měla stačit
+
+40 pinů - 20 programovatelných
+3.3V logická 1
+Bluetooth, Wifi
+DDR2 RAM 1GB
+
+Bootování z microSD
+
+Srovnání s PC - vše přes USB (pomalé), GPIO
+Na Rpi 4 běží i Win10, na 3 ani XP
+
+Číslování pinů BCM / Board
+
+Přísné na napájení - snadno se rozbijí
+
+Instalace OS - flashnutí SD karty, karta do raspberry, instalace...
+
+Pull up down, nastaveni vstupů / výstupů
+
+Umět popsat kód, který dostaneme u maturity. Jestli tam je nastavení vstupů / výstupů, BCM / Board

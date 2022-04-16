@@ -1,7 +1,5 @@
 # 20. Frameworky pro webová řešení
 
-<!-- TODO trochu nechápu "možnosti pro JavaScript" v zadání, Bootstrap se dá obsluhovat přes JavaScript ale nikdy nás to nikdo neučil...idk -->
-
 > Bootstrap – filozofie, propojení s HTML a CSS, stylopisy, možnosti pro JavaScript. Příklady využití. JQuery – filozofie, použití, DOM, události, efekty, manipulace s CSS, jQuery jako plug-iny pro Bootstrap.
 
 ---
@@ -129,8 +127,6 @@ Třída `accordion` zabalí celý prvek a zaručí, že jen jeden accordion mů�
 ## jQuery
 
 jQuery je JavaScript knihovna ulehčující například výběr HTML elementů, animace, použití Ajax mnohem jednodušší, než JavaScript. Také garantuje kompatibilitu mezi webovými prohlížeči.
-
-<!-- TODO ačkoliv chápu jak funguje jQuery, počkal bych než to s námi probere ve škole protože to zadání se snaží být až moc "odborné" -->
 
 ```
 Autor: Roman Táborský

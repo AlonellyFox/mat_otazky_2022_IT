@@ -1,5 +1,8 @@
 # 21. Frameworky pro desktopová řešení
-Zadání: Formulářové prvky, kontejnery (kontejnery a jejich vlastnosti, pokročilé prvky formulářových aplikací, pokročilé události formulářových prvků. Vícevláknové aplikace. Grafický engine Swing. Grafický engine Unity3D. Grafické objekty a jejich ovládání (posun, kolize), pohybující se objekty, tvorba a ovládání interaktivních objektů.
+
+> Formulářové prvky, kontejnery (kontejnery a jejich vlastnosti, pokročilé prvky formulářových aplikací, pokročilé
+události formulářových prvků. Vícevláknové aplikace. Grafický engine Swing. Grafický engine Unity3D. Grafické
+objekty a jejich ovládání (posun, kolize), pohybující se objekty, tvorba a ovládání interaktivních objektů.
 
 ---
 

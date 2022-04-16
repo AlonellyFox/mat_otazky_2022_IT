@@ -2,22 +2,20 @@
 
 > Historický přehled počítačů PC, form faktory. Hlavní komponenty, jejich vlastnosti a parametry. Sběrnice a čipové sady, BIOS. Adresy zařízení na sběrnici. Realizace operační paměti. Pevné disky (HDD a SSD).
 
+---
+
 ## Historický přehled
 
-### Přehled dle generací
-
-#### Nultá generace (1930 – 1940)
+### Nultá generace (1930 – 1940)
 
 Elektromechanické počítače s reléovými obvody či manuálními přepínači.
-
-<!-- TODO přidat příklad počítače z této doby -->
 
 Howard Aiken – Studoval a učil na Harvardu, pomohl sestrojit s IBM Harvard Mark I za pomocí jím vymyšlené harvardské
 koncepce
 
 [Wikipedia](https://en.wikipedia.org/wiki/Mechanical_computer#Electro-mechanical_computers)
 
-#### První generace (1945 – 1951)
+### První generace (1945 – 1951)
 
 Využívala elektronek, relé už jen zřídka. Počítače byly neefektivní, velmi drahé, vysoký příkon, velká poruchovost a
 velmi nízkou výpočetní rychlost. Například jeden počítač z této generace, ENIAC (1946), spotřeboval 150 kW energie a
@@ -27,25 +25,25 @@ V této době se také objevuje použití binární soustavy a von Neumannovy ar
 
 [Wikipedia](https://en.wikipedia.org/wiki/Vacuum-tube_computer)
 
-#### Druhá generace (1951 – 1965)
+### Druhá generace (1951 – 1965)
 
 *Poznámka: následující generace sdílí stejný odkaz
 pro [Wikipedii](https://en.wikipedia.org/wiki/History_of_computing_hardware_(1960s%E2%80%93present))*
 
 Používány tranzistory: zmenšení rozměrů, zvýšení rychlosti a spolehlivosti, snížení energetických nároků. V této
-generaci jsou stále zmíňky o používání decimální soustavy, ale ta je silně nahrazována binární.
+generaci jsou stále zmínky o používání decimální soustavy, ale ta je silně nahrazována binární.
 
 Trhu počítačů v této době dominovalo IBM, za zmínku stojí i Bell labs, kde vznikl tranzistor (Bardeen, Brattain a
 Shockley).
 
-#### Třetí generace (1965 – 1980)
+### Třetí generace (1965 – 1980)
 
 Integrované obvody, postupem času roste počet tranzistorů v jednom obvodu (zlepšuje se integrace). Multitasking proces (
 vykonávané programy se střídají).
 
 Mezi první počítače z této doby patří třeba Apollo Guidance Computer, který řídil první Apollo misi.
 
-#### Čtvrtá generace (od 1981)
+### Čtvrtá generace (od 1981)
 
 Charakteristická mikroprocesory a osobními počítači. Mikroprocesory v jednom pouzdře obsahují celé CPU (dřívější
 procesory se skládaly z více obvodů) a jsou integrované s vysokou integrací, které umožnily snížit počet obvodů na
@@ -234,9 +232,9 @@ MLC buněk snižuje jejich počet.
 
 Hierarchie pamětí je setříděna následovně:
 
-SLC (1 bit v buňce) – nejrychlejší, nejvyšší cena, největší životnost MLC (2 bity v buňce)
-TLC (3 bity v buňce)
-QLC (4 bity v buňce) – nejpomalejší, nejlevnější, největší životnost
+* SLC (1 bit v buňce) – nejrychlejší, nejvyšší cena, největší životnost MLC (2 bity v buňce)
+* TLC (3 bity v buňce)
+* QLC (4 bity v buňce) – nejpomalejší, nejlevnější, největší životnost
 
 ### Skříň
 
@@ -281,6 +279,8 @@ Standardní počet linek je x1, x2, x4, x8 a x16, pro výpočet rychlost x16 lin
 Vznikla v roce 2003.
 
 ```
+Editace: Roman Táborský
+
 Autor: Roman Skalík
 Merger: Sádlík Kryštof
 Datum: 7.5.2020

@@ -1,4 +1,10 @@
-# Webový prohlížeč
+# 10. Hypertext, kaskádové styly a webové skriptování
+
+> Funkce webového prohlížeče. Struktura internetového dokumentu. Význam HTML a základní prvky. Kaskádové
+styly, typy deklarací, syntaxe, identifikátory, třídy. Princip komunikace klient-server. Charakteristika a využití
+JavaScriptu. Dialogová okna, hlášky, události, funkce JS. PHP, řídicí struktury, formuláře a předávání dat.
+
+## Webový prohlížeč
 
 Webový prohlížeč je software pro prohlížení hypertextového obsahu. Mezi jeho hlavní funkce mj.
 patří:
@@ -13,7 +19,7 @@ Storage, ...)
 - Zaznamenávání historie, anonymní režim
 - Uschovávání oblíbených míst ve formě záložek či seznamu oblíbených stránek
 
-# HTML, struktura internetového dokumentu
+## HTML, struktura internetového dokumentu
 
 Hypertextový obsah se popisuje primárně pomocí HTML – Hypertext Markup Language. Svou syntaxí
 připomíná značkovací jazyk XML, avšak implementace HTML parserů jsou tolerantnější vůči chybám
@@ -60,7 +66,7 @@ Mezi nejčastěji používané HTML prvky patří:
 - `img`
 - `br`
 
-# CSS
+## CSS
 
 CSS (Cascading Style Sheets) je jazyk blíže popisující vzhled, rozložení a chování prvků v HTML
 dokumentu, ke kterému je skupina CSS pravidel přidružena.
@@ -131,7 +137,7 @@ Taktéž lze použít následující operátory:
 - `+` - vybírá prvek přímo následující po prvku vybíraném prvním selektorem
 - `~` - vybírá prvek přímo předcházející prvek vybíraný prvním selektorem
 
-# Klient-server
+## Klient-server
 
 Protokol HTTP, který se pro distribuci hypertextového obsahu používá, je protokol fungující nad TCP
 typu klient-server – existuje tedy entita poskytující obsah a vyřizující požadavky (server) a entita,
@@ -141,14 +147,14 @@ Komunikace po protokolu HTTP začíná navázáním připojení ze strany klient
 serveru. Server provede naprogramovanou akci a odpoví odpovědí, která, v ideálním případě,
 obsahuje žádaný obsah.
 
-# JavaScript
+## JavaScript
 
 Pro tvorbu webového obsahu se používá i jazyk JavaScript. Je to Turing-kompletní programovací jazyk
 a používá se pro skriptování na straně klienta - tvorba uživatelských interakcí (animace, validace
 formulářů, asynchronní komunikace se serverem, ...), či rovnou realizace celé prezentační logiky
 webové aplikace.
 
-## Dialogová okna
+### Dialogová okna
 
 JavaScript použitý ve webových prohlížečích zpřístupňuje 3 typy blokujících dialogových oken:
 
@@ -159,7 +165,7 @@ dialogového okna a vrací `true` či `false` v závislosti na vstupu od uživat
 - vstup – implementováno funkcí `prompt`, akceptující řetězec s obsahem dialogového okna a
 výchozí hodnotou, vrací zadanou či výchozí hodnotu v podobě textového řetězce
 
-## Události
+### Události
 
 Události, obecně, jsou kolekce odkazů na funkce, které jsou v nějakém bodu provádění volány
 zdrojem události (návrhový vzor Observer) a jsou jedním z hlavních konstrukcí využívaných při tvorbě
@@ -183,7 +189,7 @@ Mezi nejčastěji využívané události mj. patří:
 - `keyup`
 - `load`
 
-## Funkce
+### Funkce
 
 Funkce je seskupená množina příkazů, která může být parametrizovaná sadou parametrů a může
 vracet nějakou hodnotu.
@@ -196,14 +202,14 @@ Deklarace funkce je možná třemi způsoby:
 - výrazem – např. `function(x) { return x * 2 ; }` (který lze uložit třeba do proměnné `let myfunction = function(x) { return x * 2 ; };`)
 - lambda výrazem – např. `(x) => x * 2`, vhodné pro funkce skládající se z jednoho příkazu
 
-# PHP
+## PHP
 
 PHP je Turing-kompletní programovací jazyk pro skriptování na straně serveru, kde většinou bývá
 realizována doménová logika webové aplikace. Původním autorem je Rasmus Lerdorf, nyní je však
 vyvíjen komunitně. Syntakticky vychází z jazyků C++ a Java, podporuje i objektově orientované
 programování.
 
-## Řídící struktury
+### Řídící struktury
 
 Řídící struktury jsou struktury sloužící pro větvení či opakování části psaného programu.
 
@@ -286,7 +292,7 @@ foreach (iterovatelny_vyraz as $key => $value)
 	echo $key. " => ". $value;
 }
 ```
-## Formuláře
+### Formuláře
 
 Jazyk PHP je schopen nativně zpracovávat formulářová data odeslaná jako součást URL požadavku,
 s typem těla `multipart/form-data` či `application/x-www-form-urlencoded`.
@@ -295,7 +301,7 @@ Data uvedená jako součást URL jsou dostupná v superglobální proměnné `$_
 pole, následující URL:
 
 ```
-http://example.com/myhandler.php?name1=valu1e&name2=value2
+https://example.com/myhandler.php?name1=valu1e&name2=value2
 ```
 ...způsobí, že proměnná _$_GET_ bude nabývat této hodnoty:
 

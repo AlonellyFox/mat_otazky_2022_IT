@@ -2,6 +2,8 @@
 
 > Algoritmus, vývojový diagram a jednotlivé schematické prvky, principy strukturovaného a objektově orientovaného programování, konstrukce (podmínka, cyklus, proměnná, vstupy, výstupy, procedury, funkce) ve vztahu k jazyku Python. Python a operátory, proměnné, vstup/výstup.
 
+---
+
 Algoritmus je přesný návod či postup, kterým lze vyřešit daný typ úlohy. Pojem algoritmu se nejčastěji objevuje při
 programování, kdy se jím myslí teoretický princip řešení problému (oproti přesnému zápisu v konkrétním programovacím
 jazyce). Obecně se ale algoritmus může objevit v jakémkoli jiném vědeckém odvětví. Jako jistý druh algoritmu se může
@@ -45,8 +47,24 @@ V užším smyslu se slovem algoritmus označují takové postupy, které splňu
 
 ## Diagram
 
-Nejčastěji používaný grafický záznam algoritmu. Pro zápis se používají ustálené grafické symboly.
-![HDD](images/Diagram.png)
+Nejčastěji používaný grafický záznam algoritmu. Pro zápis se používají ustálené grafické symboly. Následující graf byl
+vytvořen přes Mermaid, u maturity asi použijte rovnější čáry lol.
+
+```mermaid
+flowchart TB
+    start([Start]) --> vstup[/"Vstup (načti)"/]
+    vstup --> podminka{Podmínka}
+    podminka -- ne --> podprogram[[podprogram]]
+    podminka -- ano --> prirazeni["Zpracování a přiřazení"]
+    podprogram --> cyklus{{"Cyklus s řídící proměnnou"}}
+    prirazeni --> cyklus
+    cyklus --> vstup
+    cyklus --> spojka1((Spojka))
+
+    spojka2((Spojka))
+    spojka2 --> vystup[/"Výstup (zobraz)"/]
+    vystup --> konec([Konec])
+```
 
 ## Principy strukturovaného programování
 
@@ -73,10 +91,10 @@ se skládá z objektů a tříd. Objekty mají atributy (proměnné) a metody (f
 - **zapouzdření** (umožňuje skrýt některé metody a atributy tak, aby zůstaly použitelné jen pro třídu zevnitř – klíčová
   slova private, public)
 - **dědičnost** (umožňuje využít již napsaný kód nějaké třídy a druhou třídu jen doplnit o další funkcionalitu)
-- **polymorfismus** (umožňuje přepsat si metodu delejNeco() u každé podtřídy (v dědičnosti) tak, aby dělala, co chceme)
+- **polymorfismus** (umožňuje přepsat si metodu `delejNeco()` u každé podtřídy (v dědičnosti) tak, aby dělala, co chceme)
 
-![Polymorfizmus](images/oop_speak.png)
-![Dědičnost](images/oop_model.png)
+Například, kolo je třída, která umožňuje šlapání do pedálů za pomocí metody `slapat()` a brzdit za pomocí metody 
+`brzdit()`. V operačních systémech, běžný uživatel zase dědí z uživatele Administrator.
 
 ```py
 class Kalkulacka:

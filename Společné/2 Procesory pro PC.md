@@ -1,5 +1,11 @@
 # 2. Procesory pro PC
 
+> Charakteristika a parametry procesorové řady pro počítače IBM-PC kompatibilní. Paměťový prostor, cache, módy
+činnosti. Adresování v reálném a chráněném režimu. Přerušení, přímý přístup do paměti. Zpracování instrukcí
+(klasické, zřetězené), jednotky procesoru, HT. Možnosti zvyšování výkonu procesorů.
+
+---
+
 ## Charakteristika a parametry procesorů IBM-PC kompatibilní
 |  | **Rok Výroby** | **Typ procesoru (v bitech)** |**Datová Sběrnice (v bitech)** | **Adresní Sběrnice (v bitech)** | **Počet Tranzistorů** |
 | - | :-: | :-: | :-: | :-: | :-: |
