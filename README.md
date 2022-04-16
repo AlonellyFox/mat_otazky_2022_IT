@@ -24,7 +24,7 @@ ty, které jsou technicky vzato hotové, mají u sebe fajfku.
 - [x] [15S Směrování a směrovací protokoly](Síťaři/15S%20Směrování%20a%20směrovací%20protokoly.md) - Tománek J.
 - [ ] 16S Segmentace sítí - VLAN - Kukučka O.
 - [ ] 17S Wi-Fi a VF technika - Sniegoň J.
-- [ ] 18S Základní správa OS Linux a Windows
+- [ ] 18S Základní správa OS Linux a Windows - Kukučka O.
 - [ ] 19S Hardware podnikových řešení - Zdražil P.
 - [ ] 20S Správa OS Windows v PowerShellu - Povala L.
 - [ ] 21S Interpret Bash - Samuel S.
