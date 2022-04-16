@@ -1,12 +1,20 @@
 # 2. Procesory pro PC
 
 ## Charakteristika a parametry procesorů IBM-PC kompatibilní
+|  | **Rok Výroby** | **Typ procesoru (v bitech)** |**Datová Sběrnice (v bitech)** | **Adresní Sběrnice (v bitech)** | **Počet Tranzistorů** |
+| - | :-: | :-: | :-: | :-: | :-: |
+| **i8086** | 1980 | 16 | 16 | 20 | 29 tisíc |
+| **i80286** | 1981 | 16 | 16 | 24 | 130 tisíc |
+| **i80386** | 1983 | 32 | 32 | 32 | 275 tisíc |
+| **i80486** | 1989 | 32 | 32 | 32 | 1.2 milionů |
+| **Pentium 1** | 1993 | 32 | 64 | 36 | 3.1 milionů |
+| **Pentium Pro** | 1995 | 32 | 64 | 36 | 5.5 milionů |
+| **Pentium 2** | 1997 | 32 | 64 | 36 | 7.2 milionů |
+| **Pentium 3** | 1999 | 32 | 64 | 36 | 9.5 milionů |
+| **Pentium 4** | 2000 | 32 | 64 | 36 | 125 milionů |
 
-### i8086 (1980)
-- První 16b procesor
-- 16b Datová sběrnice
-- 20b Adresní sběrnice
-- 29k Tranzistorů
+
+### i8086
 - Zpětně kompatibilní s i8080
 - První procesor s architekturou x86
 - Umí adresovat až 2^20 (Toto se určuje podle adresní sběrnice) (1MiB) operační paměti
@@ -27,12 +35,8 @@ A8590 + 145C = A99EC
 A99EC
 
 ```
-### i286 (1981)
+### i286
 - První setup BIOS
-- 130k tranzistorů
-- 16b Procesor 
-- 16b Datová sběrnice
-- 24b Adresní sběrnice
 - Přišel s novým režimem (Chráněný režim)
 - Realný režim
   - Plně kompatibilní s procesorem 8086
@@ -44,36 +48,26 @@ A99EC
   - Adresa se tvoří ze dvou 16b složek (selektor a offset) za pomoci tabulek 
   - Vysledná adresa je 24b (16MiB ram (2^24))
 
-### i386 (1983)
-- První 32b Procesor
-- 32b Adresní běrnice
-- 32b Datová sběrnice
+### i386
 - ***První Multitasking***
 - První Použítí cahce na základní desce
-- 275k Tranzistorů
 - Nový režim (Virtuální)
 - Reálný - stejný jako 8086
 - Chraněný režim
   - Výsledná adresa je 32b (4GiB RAM (2^32))
-  - Adresa se tvoří ze selektoru a offsetu
   - Je rozšířeny o strankovaní - Převádí to lineární adresu ve vzdálené paměti na fyzickou adresu. Všechny adresy nemusí ukazovat na fyzickou paměť, některé mohou být odswapovány na pevný disk (virtuální paměť)
 - Virtuální režim
   - Funguje podobně jako 8086
   - Možnost virtualizovat 1Mib, může uložit kdekoli do 4GiB adresního prostoru a spustit v něm reálný mód
 
 
-### i486 (1989)
+### i486
 **Prakticky i80386, která má navíc interní cache a numerický koprocesor (FPU)**
-- 1,2M Tranzistorů
 - Později vznikly procesory i80486dx2 a i80486dx4 kdy číslo 2 a 4 udává tzv. násobič (kolikrát běží jádro procesoru rychleji, než sběrinice FSB (Front Side Bus))
 - Existoval i procesor i80486sx oficiálně bez FPU, reálně byl FPU pouze spálený.
 
 
-### Intel Pentium 1 (1993)
-- 32b Procesor
-- 64b Datová sběrnice 
-- 32b Adresní sběrnice
-- 3,1M Tranzistorů
+### Intel Pentium 1
 - První superskalární procesor (2 Instrukční fronty (během jednoho taktu může dokončit až 2 instrukce))
 - Zaveden Branch Target Buffer (Dynamické předvídání skoků) 
 - 16KiB Cache paměť
@@ -81,7 +75,7 @@ A99EC
   - 8 KiB na insturkce
 - U pozdějších verzí se snižuje napájecí napětí na 3,3V
 
-### Pentium Pro (1995)
+### Pentium Pro
 - Pro servery, výkonné pracovní stanice
 
 ##### Pentium MMX (Multi Media Extension) (1997)
@@ -89,14 +83,14 @@ A99EC
 - Pro multimediální výpočty
 - Technologie SIMD (Simple Instruction Data), která umožňuje práci s více čísly najednou
 
-### Pentium 2 (1997)
+### Pentium 2
 - L2 Cache 256KB
 - Levnější varianta - Intel Celeron původně bez L2, později se 128KB L2 Cache
 
-### Pentium 3 (1999)
+### Pentium 3 
 - Nové instrukční sady SSE
 
-### Pentium 4 (2000)
+### Pentium 4 
 - Dvaceti stupňový pipelining
 - HyperThreading (Logicky se jádro tváří jako 2 jádra)
 
@@ -304,42 +298,27 @@ Jedná se o následující stupně:
 
 Pipelining, zřetězené zpracování či překrývání strojových instrukcí je způsob zvýšení výkonu
 procesoru současným prováděním různých částí několika strojových instrukcí. Základní myšlenkou je
-
-
 rozdělení zpracování jedné instrukce mezi různé části procesoru a tím i umožnění zpracovávat více
-instrukcí najednou. Fáze zpracování je rozdělena minimálně na 2 úseky:
+instrukcí najednou.
 
-1.Načtení a dekódování instrukce
-2.Provedení instrukce a případné uložení výsledku
-To vedlo k vytvoření procesoru složeného ze dvou spolupracujících subprocesorů, kdy každá část
-realizuje danou fázi zpracování. Procesor má části – EU (Execution Unit) a BIU (Bus Interface Unit).
-Zřetězení se stále vylepšuje a u novějších procesorů se již můžeme setkat stále s více řetězci
-rozpracovaných informací. Z toho vyplývá, že je možno dokončit více než 1 instrukci za 1 hodinový
-cyklus (takt procesoru).
+![Ukázka pipeliningu na obrázku](https://user-images.githubusercontent.com/89984430/163674692-ea01eeb8-df78-44d9-acba-818889f29f0a.png)
 
-Zřetězené zpracování je technika používaná při návrhu počítačů pro zvýšení jejich instrukčního
-průchodu. Základní instrukční cyklus je rozdělen na série zvané vedení. Místo zpracovávání každé
-instrukce postupně, každá instrukce je rozdělena na sled kroků, takže různé kroky mohou být vykonány
-současně a paralelně (jiným okruhem).
+Řekněme, že máme model, kdy počítač používá **3** základní moduly při zpracování instrukce: ***fetch, decode, execute,*** tedy 3 moduly. Pokud bychom měli vykonat 4 takovéto cykly, zabralo by nám to 12 taktů
 
-Zřetězení zvyšuje instrukční průtok prováděním více operací současně, ale nesnižuje instrukční latenci
-(čas pro provedení instrukce od začátku do konce), jelikož stále musí provést všechny kroky. Vskutku,
-může to zvyšovat latenci kvůli přídavné režii z rozdělení výpočtů na oddělené kroky a hůře, zřetězení
-se může zdržet, což dále zvyšuje latenci. Zřetězení tedy zvyšuje průtok za cenu latence a je často
-používáno v CPU, ale nikoliv v realtime systémech, které jsou na latenci těžce závislé.
+| 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+| - | - | - | - | - | - | - | - | - | - | - | - |
+| F | D | E | F | D | E | F | D | E | F | D | E |
 
-Každá instrukce je rozdělena do posloupnosti závislých kroků. Prvním krokem je vždy načtení
-instrukce z paměti, posledním krokem je většinou zápis výsledku do registru nebo paměti. Zřetězení se
-snaží umožnit procesoru pracovat na tolika instrukcích zároveň, kolik je závislých kroků, stejně jako
-montážní linka sestavuje několik vozidel současně, místo aby čekala, až jedno projde celou linkou, než
-začne s dalším. Stejně jako cílem montážní linky je udržet každou součást produktivní v každém
-okamžiku, zřetězení chce udržet každou část procesoru zaneprázdněnou s nějakou instrukcí. Zřetězení
-v počítači umožňuje, že čas cyklu je čas nejpomalejšího kroku a ideálně je v každém cyklu dokončena
-jedna strojová instrukce.
+Pokud se zamyslíme, uvědomíme si, že každý modul je 2 ze 3 taktů nevyužit. Pokud bychom tedy zpracovávali instrukce „paralelně“, namísto za sebou, určitě bychom dosáhli zrychlení.
 
-Pojem pipeline je analogií faktu, že v potrubí je v každém úseku kapalina, stejně jako je každá část
-procesoru zatížena prací.
+| 1 | 2 | 3 | 4 | 5 | 6 | 
+| - | - | - | - | - | - | 
+| F | D | E |  |  |  |
+|  | F | D | E |  |  |
+|  |  | F | D | E |  |
+|  |  |  | F | D | E |
 
+Jak je vidět, stejné operace jsou nyní dvojnásobně rychlejší (místo 12 taktů pouze 6)
 
 ## Jednotky Procesoru
 
@@ -374,7 +353,7 @@ Rychle přepíná mezi dvěma sadami registrů.
 - Velikost procesorové cache - propojuje procesor s RAM
 
 ```
-Editace: Lukáš Píšek
 Autor: Jiří Jungwirth
-Datum: 20. 3. 2022
+Merger: Sádlík Kryštof
+Datum: 7.5.2020
 ```

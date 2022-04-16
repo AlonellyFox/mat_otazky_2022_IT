@@ -35,4 +35,4 @@ Originální dokumenty v branchi 'original'.
 - [ ] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) (doplnit jQuery) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
 
-***Updated 24. 3. 2022***
+***Updated 16. 4. 2022***
