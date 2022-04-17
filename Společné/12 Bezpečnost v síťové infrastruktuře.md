@@ -132,8 +132,10 @@ IDS – Intrusion Detection Systems
 ### In transit
 - Porovnání otisku souborů
 - Šifrovaný přenos dat přes zabezpečený protokol
-- Kontrola provozu na síti a ověření, že nikdo jiný nenaslouchá 
+- Kontrola provozu na síti a ověření, že nikdo jiný nenaslouchá
 
+```
 Editace: David Kabeláč
 Autor: Sádlík Kryštof
 Datum: 17.04.2022
+```
