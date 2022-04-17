@@ -16,7 +16,7 @@ ty, které jsou technicky vzato hotové, mají u sebe fajfku.
 - [ ] 9 Databáze - Stacha V.
 - [x] 10 [Hypertext, kaskádové styly a webové skriptování](Společné/10%20Hypertext,%20kaskádové%20styly%20a%20webové%20skriptování.md) - Žluva A.
 - [ ] 11 Principy počítačových sítí LAN a WAN - Čáň J.
-- [ ] 12 Bezpečnost v síťové infrastruktuře - Kabeláč D.
+- [ ] 12 [Bezpečnost v síťové infrastruktuře](Společné/12S%20Bezpe%C4%8Dnost%20v%20s%C3%AD%C5%A5ov%C3%A9%20infrastruktu%C5%99e.md) - Kabeláč D.
 - [ ] 13 Tvorba dokumentů v balíku kancelářských aplikací - Gargulák M.
 - [ ] 14 Základy elektrotechniky a číslicové logiky - Koňař L.
 ---
