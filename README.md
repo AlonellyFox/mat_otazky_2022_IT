@@ -36,7 +36,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [ ] 16P Programování na platformě Android v jazyku Java - Cerman J.
 - [ ] 17P Pokročilé skriptování na straně klienta a serveru - Matulík M.
 - [x] 18P [Desktopové programování v jazyku Java (SE)](Programátoři/18P%20Desktopové%20programování%20v%20jazyku%20Java%20(SE).md) - Žluva A.
-- [ ] 19P Databázový systém MySQL
+- [ ] 19P Databázový systém MySQL - Hodulák F.
 - [ ] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
 
