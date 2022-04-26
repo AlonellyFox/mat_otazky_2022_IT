@@ -5,10 +5,12 @@ Originální dokumenty v branchi 'original'.
 Některé otázky mají problémy s nedokončeností, více v Issues. Otázky, které existují v repozitáři mají zde odkazy a jen 
 ty, které jsou technicky vzato hotové, mají u sebe fajfku.
 
+Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch?v=2JE66WFpaII)
+
 - [ ] 1 [Základy informatiky](Společné/1%20Základy%20Informatiky.md) - Táborský R.
 - [ ] 2 [Procesory pro PC](Společné/2%20Procesory%20pro%20PC.md) - Píšek L.
 - [x] 3 [Architektura počítačů IBM-PC](Společné/3%20Architektura%20IBM%20PC.md) - Táborský R.
-- [ ] 4 Periferní zařízení PC - Pijáček M.
+- [x] 4 [Periferní zařízení PC](Společné/4%20Standartní%20periferní%20zařízeními.md) - Pijáček M.
 - [ ] 5 Bootování operačního systému a souborové systémy - Gospoš R.
 - [ ] 6 Správa procesů a paměti v operačních systémech
 - [x] 7 [Algoritmizace a programovací jazyk Python](Společné/7%20Algoritmizace.md) - Táborský R.
@@ -38,4 +40,4 @@ ty, které jsou technicky vzato hotové, mají u sebe fajfku.
 - [ ] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
 
-***Updated 17. 4. 2022***
+***Updated 26. 4. 2022***
