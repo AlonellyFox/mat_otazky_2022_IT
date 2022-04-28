@@ -7,8 +7,8 @@ ty, které jsou technicky vzato hotové, mají u sebe fajfku.
 
 Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch?v=2JE66WFpaII)
 
-- [ ] 1 [Základy informatiky](Společné/1%20Základy%20Informatiky.md) - Táborský R.
-- [ ] 2 [Procesory pro PC](Společné/2%20Procesory%20pro%20PC.md) - Píšek L.
+- [x] 1 [Základy informatiky](Společné/1%20Základy%20Informatiky.md) - Táborský R.
+- [x] 2 [Procesory pro PC](Společné/2%20Procesory%20pro%20PC.md) - Píšek L.
 - [x] 3 [Architektura počítačů IBM-PC](Společné/3%20Architektura%20IBM%20PC.md) - Táborský R.
 - [x] 4 [Periferní zařízení PC](Společné/4%20Standartní%20periferní%20zařízeními.md) - Pijáček M.
 - [ ] 5 Bootování operačního systému a souborové systémy - Gospoš R.
