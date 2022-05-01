@@ -1,4 +1,4 @@
-# 11. Sítě
+# 11. Principy počítačových sítí LAN a WAN
 > Technické prostředky LAN, topologie sítí, Ethernet a soudobá řešení, přenosová média, aktivní prvky, model
 ISO/OSI, komunikace v síti LAN typu Ethernet, MAC adresy. Model sítě podle TCP/IP, komunikace mezi sítěmi,
 struktura a pravidla IP adres (IPv4 a IPv6), podsítě, transport a komunikace mezi aplikacemi, porty, standardní
