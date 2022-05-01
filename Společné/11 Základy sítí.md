@@ -1,4 +1,8 @@
 # 11. Sítě
+> Technické prostředky LAN, topologie sítí, Ethernet a soudobá řešení, přenosová média, aktivní prvky, model
+ISO/OSI, komunikace v síti LAN typu Ethernet, MAC adresy. Model sítě podle TCP/IP, komunikace mezi sítěmi,
+struktura a pravidla IP adres (IPv4 a IPv6), podsítě, transport a komunikace mezi aplikacemi, porty, standardní
+aplikační protokoly a služby aplikační vrstvy.
 
 ## Ethernet
 
@@ -17,6 +21,7 @@ rozhraní pro přístupové body WiFi a zařízení pro přístup k Internetu. P
 připojení na LAN, v naprosté většině případů to znamená, že je vybaveno konektorem 8P8C (RJ-45) pro
 síť Ethernet s rychlostí 100 nebo 1000 Mbit/s.
 
+---
 
 ## LAN
 Označuje všechny malé sítě, které si mohou vytvořit i samotní uživatelé, 
@@ -24,6 +29,8 @@ jedná se o sítě uvnitř místností, budov a menších areálů.
 Poskytují přenosovou rychlost až desítek Gb/s. Skládá se z aktivních 
 a pasivních prvků a slouží ke sdílení prostředků které jsou LAN dostupné. 
 Pro spojení sítí typu LAN se využívají sítě typu WAN.
+
+---
 
 ## Topologie
 ### Star
@@ -44,6 +51,8 @@ V této topologii je každé zařízení připojeno ke dvěma dalším tak že 
 V jednu chvíli vysílá pouze jedno zařízení a ostatní naslouchají, díky tomu tedy 
 nedochází ke kolizím. Nevýhodou ale je že pokud selže jedno zařízení tak dojde k selhání celé sítě.
 
+---
+
 ## Přenosová média
 
 ### Měděné dráty
@@ -56,6 +65,8 @@ i vytvořené páry. V tomto typu přenosových médií jsou data přenášena 
 Jsou tvořené z optických vláken, data jsou přenášeny pomocí světla díky čemuž může 
 dosahovat velmi vysoké šířky pásma. Jsou odolné vůči elektromagnetickému rušení a 
 umožňují přenos dat na velké vzdálenosti.
+
+---
 
 ## Aktivní prvky
 
@@ -77,6 +88,8 @@ příjemcem, kvůli tomu všechny koncové zařízení, jež jsou k němu přip
 veškerý provoz na síti. Pracuje na první vrstvě ISO/OSI modelu. 
 Nyní se již moc nepoužívá, bývá nahrazen Switchem.
 
+---
+
 ## Model ISO/OSI
 Úlohou tohoto modelu je poskytnout základnu pro vypracování norem pro účely propojování systémů. 
 Uvádí všeobecné principy sedmivrstvé architektury. Popisuje vrstvy, jejich funkce a služby. 
@@ -84,6 +97,8 @@ Každá z těchto vrstev vykonává skupinu jasně definovaných funkcí potře
 pro svou činnost využívá služeb své sousední nižší vrstvy své služby pak poskytuje sousední vyšší vrstvě.
 
 ![model ISO/OSI](images/iso.jpg)
+
+---
 
 ## Model TCP/IP
 Obsahuje sadu protokolů pro komunikaci v počítačové síti, množina pravidel, 
@@ -94,6 +109,8 @@ různých systémů je řízena komunikačním protokolem za použití spojení 
 
 ![model TCP/IP](images/tcp.gif)
 
+---
+
 ## MAC adresy
 
 Jednoznačný identifikátor zařízení, který pracuje na druhé vrstvě modelu ISO/OSI. 
@@ -101,6 +118,8 @@ Je přiřazována již při výrobě zařízení, bývá označována jako fyzic
 Ethernetová MAC adresa se skládá ze 48bitů a zapisuje se jako šestice dvojciferných hexadecimálních čísel 
 oddělených pomlčkami nebo dvojtečkami. Jsou přiděleny výrobcem a bylo předpokládáno 
 že bude vždy celosvětově jedinečná. U moderních zařízení a síťových karet je možno MAC adresu změnit.
+
+---
 
 ## IP adresy
 
@@ -114,6 +133,8 @@ IPv6 adresy mají délku 128bitů a zapisují se pomocí hexadecimální soustav
 Každé čtyři bity jsou znázorněny hexadecimální hodnotou, každé čtyři 
 hexadecimální hodnoty jsou odděleny dvojtečkou, neoficiálně označovány jako hextet.
 
+---
+
 ## Podsítě
 Menší vyčleněná část větší sítě, pro určení rozsahu IP adres slouží maska sítě. 
 Maska sítě nám udává číslo sítě a broadcast adresu. To se dá zjistit z jakékoli IP 
@@ -124,6 +145,6 @@ do podsítě například podle patra budovy na kterém se nachází.
 
 ```
 Autor: Tomáš Mrázek
-Merger: Zdražil Patrik
-Datum: 30.4.2022
+Editace: Zdražil Patrik
+Datum: 1. 5. 2022
 ```
