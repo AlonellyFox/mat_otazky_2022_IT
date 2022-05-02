@@ -27,9 +27,9 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [ ] 16S Segmentace sítí - VLAN - Kukučka O.
 - [ ] 17S Wi-Fi a VF technika - Sniegoň J.
 - [ ] 18S Základní správa OS Linux a Windows - Kukučka O.
-- [ ] 19S Hardware podnikových řešení - Zdražil P.
-- [ ] 20S Správa OS Windows v PowerShellu - Povala L.
-- [ ] 21S Interpret Bash - Samuel S.
+- [x] 19S Hardware podnikových řešení - Zdražil P.
+- [x] 20S Správa OS Windows v PowerShellu - Zdražil P.
+- [x] 21S Interpret Bash - Zdražil P.
 ---
 ### Programátoři
 - [ ] 15P [Hardware a programování minipočítače Raspberry Pi](Programátoři/15P%20Hardware%20a%20programování%20minipočítače%20Raspberry%20Pi.md) - Táborský R.
@@ -40,4 +40,4 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [ ] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
 
-***Updated 26. 4. 2022***
+***Updated 02. 05. 2022***
