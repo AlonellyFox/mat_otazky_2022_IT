@@ -15,7 +15,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [ ] 6 Správa procesů a paměti v operačních systémech
 - [x] 7 [Algoritmizace a programovací jazyk Python](Společné/7%20Algoritmizace.md) - Táborský R.
 - [ ] 8 Prezentační nástroj a multimédia - Klícha M.
-- [ ] 9 Databáze - Stacha V.
+- [x] 9 Databáze - Stacha V.
 - [x] 10 [Hypertext, kaskádové styly a webové skriptování](Společné/10%20Hypertext,%20kaskádové%20styly%20a%20webové%20skriptování.md) - Žluva A.
 - [ ] 11 [Principy počítačových sítí LAN a WAN](Společné/11%20Principy%20počítačových%20sítí%20LAN%20a%20WAN.md) - Zdražil P.
 - [x] 12 [Bezpečnost v síťové infrastruktuře](Společné/12%20Bezpečnost%20v%20síťové%20infrastruktuře.md) - Kabeláč D.
@@ -37,7 +37,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [ ] 17P Pokročilé skriptování na straně klienta a serveru - Matulík M.
 - [x] 18P [Desktopové programování v jazyku Java (SE)](Programátoři/18P%20Desktopové%20programování%20v%20jazyku%20Java%20(SE).md) - Žluva A.
 - [ ] 19P Databázový systém MySQL - Hodulák F.
-- [ ] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
+- [x] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
 
 ***Updated 02. 05. 2022***
