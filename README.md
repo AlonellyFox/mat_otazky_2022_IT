@@ -32,7 +32,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 21S [Interpret Bash](Síťaři/21S%20Interpret%20Bash.md) - Zdražil P.
 ---
 ### Programátoři
-- [ ] 15P [Hardware a programování minipočítače Raspberry Pi](Programátoři/15P%20Hardware%20a%20programování%20minipočítače%20Raspberry%20Pi.md) - Táborský R.
+- [x] 15P [Hardware a programování minipočítače Raspberry Pi](Programátoři/15P%20Hardware%20a%20programování%20minipočítače%20Raspberry%20Pi.md) - Táborský R.
 - [ ] 16P Programování na platformě Android v jazyku Java - Cerman J.
 - [ ] 17P Pokročilé skriptování na straně klienta a serveru - Matulík M.
 - [x] 18P [Desktopové programování v jazyku Java (SE)](Programátoři/18P%20Desktopové%20programování%20v%20jazyku%20Java%20(SE).md) - Žluva A.

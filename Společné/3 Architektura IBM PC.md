@@ -8,7 +8,7 @@
 
 ### Nultá generace (1930 – 1940)
 
-Elektromechanické počítače s reléovými obvody či manuálními přepínači.
+Elektromechanické počítače s reléovými obvody či manuálními přepínači. Příklad: Z2
 
 Howard Aiken – Studoval a učil na Harvardu, pomohl sestrojit s IBM Harvard Mark I za pomocí jím vymyšlené harvardské
 koncepce

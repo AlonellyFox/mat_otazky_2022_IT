@@ -53,17 +53,17 @@ vytvořen přes Mermaid, u maturity asi použijte rovnější čáry lol.
 ```mermaid
 flowchart TB
     start([Start]) --> vstup[/"Vstup (načti)"/]
-    vstup --> podminka{Podmínka}
-    podminka -- ne --> podprogram[[podprogram]]
+    vstup --> podminka{"Podmínka"}
+    podminka -- ne --> podprogram[["Podprogram"]]
     podminka -- ano --> prirazeni["Zpracování a přiřazení"]
     podprogram --> cyklus{{"Cyklus s řídící proměnnou"}}
     prirazeni --> cyklus
     cyklus --> vstup
-    cyklus --> spojka1((Spojka))
+    cyklus --> spojka1(("Spojka"))
 
     spojka2((Spojka))
     spojka2 --> vystup[/"Výstup (zobraz)"/]
-    vystup --> konec([Konec])
+    vystup --> konec(["Konec"])
 ```
 
 ## Principy strukturovaného programování
