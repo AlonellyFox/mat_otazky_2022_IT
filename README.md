@@ -28,8 +28,8 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [ ] 17S Wi-Fi a VF technika - Sniegoň J.
 - [ ] 18S Základní správa OS Linux a Windows - Kukučka O.
 - [x] 19S Hardware podnikových řešení - Zdražil P.
-- [x] 20S Správa OS Windows v PowerShellu - Zdražil P.
-- [x] 21S Interpret Bash - Zdražil P.
+- [x] 20S [Správa OS Windows v PowerShellu](Síťaři/20S%20Správa%20OS%20Windows%20v%20PowerShellu.md) - Zdražil P.
+- [x] 21S [Interpret Bash](Síťaři/21S%20Interpret%20Bash.md) - Zdražil P.
 ---
 ### Programátoři
 - [ ] 15P [Hardware a programování minipočítače Raspberry Pi](Programátoři/15P%20Hardware%20a%20programování%20minipočítače%20Raspberry%20Pi.md) - Táborský R.
