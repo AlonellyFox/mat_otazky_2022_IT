@@ -24,7 +24,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 ---
 ### Síťaři
 - [x] [15S Směrování a směrovací protokoly](Síťaři/15S%20Směrování%20a%20směrovací%20protokoly.md) - Tománek J.
-- [ ] 16S Segmentace sítí - VLAN - Kukučka O.
+- [x] 16S Segmentace sítí - VLAN - Kukučka O.
 - [ ] 17S Wi-Fi a VF technika - Sniegoň J.
 - [ ] 18S Základní správa OS Linux a Windows - Kukučka O.
 - [x] 19S Hardware podnikových řešení - Zdražil P.
@@ -40,4 +40,4 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
 
-***Updated 02. 05. 2022***
+***Updated 03. 05. 2022***
