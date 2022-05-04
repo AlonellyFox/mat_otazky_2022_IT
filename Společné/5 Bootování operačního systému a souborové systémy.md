@@ -1,6 +1,6 @@
 # 5. Bootování operačního systému a souborové systémy
 
-Master Boot Record, boot sektor, fáze bootování operačního systému, geometrie pevných
+> Master Boot Record, boot sektor, fáze bootování operačního systému, geometrie pevných
 disků, metody přístupu na disk, souborový systém FAT32, souborový systém NTFS, linuxové
 souborové systémy (ext2, ext3)
 ---
