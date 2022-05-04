@@ -12,7 +12,7 @@
 
 Elektrický náboj je fyzikální veličina, která vyjadřuje velikost schopnosti působit elektrickou silou. Elementární náboj
 je nejmenší možný elektrický náboj a je roven velikosti náboje elementárních částic elektronu (záporný náboj) a
-protonu (kladný náboj). 
+protonu (kladný náboj).
 
 Základní jednotkou je **Coulomb (C)** - množství elektrického náboje přeneseného proudem 1 A během 1 sekundy.
 
@@ -20,7 +20,8 @@ Velikost elementárního náboje e = 1,602 &times; 10 - 19 C
 
 ### Elektrický proud (I)
 
-Elektrický proud je uspořádaný pohyb částic s elektrickým nábojem (proton, elektron). Jako fyzikální veličina je elektrický
+Elektrický proud je uspořádaný pohyb částic s elektrickým nábojem (proton, elektron). Jako fyzikální veličina je
+elektrický
 proud definován množstvím elektrického náboje Q prošlého vodičem za určitý čas t:
 
 I = <sup>Q</sup>&frasl;<sub>t</sub>
@@ -46,7 +47,8 @@ U = <sup>W</sup>&frasl;<sub>Q</sub> (W - práce, Q - náboj)
 
 Elektrický odpor je fyzikální veličina charakterizující schopnost vodiče bránit průchodu elektrického proudu. Čím větší
 odpor, tím hůře vodič vede proud. Závisí na materiálu, teplotě, délce a průřezu vodiče. Každý materiál má měrný
-elektrický odpor &rho; (rezistivita), který nám popisuje, jaký odpor má krychle toho tohoto materiál o stranách metr krát
+elektrický odpor &rho; (rezistivita), který nám popisuje, jaký odpor má krychle toho tohoto materiál o stranách metr
+krát
 metr. Základní jednotkou je Ohm (&Omega;).
 
 Výpočet odporu vodiče (&rho; - rezistivita, L - délka vodiče, S - průřez vodiče):
@@ -112,7 +114,8 @@ I = I1 + I2 + I3
 
 Převrácená hodnota výsledného odporu se rovná součtu převrácených hodnot odporů jednotlivých rezistorů.
 
-<sup>1</sup>&frasl;<sub>R</sub> = <sup>1</sup>&frasl;<sub>R1</sub> + <sup>1</sup>&frasl;<sub>R2</sub> + <sup>1</sup>&frasl;<sub>R3</sub>
+<sup>1</sup>&frasl;<sub>R</sub> = <sup>1</sup>&frasl;<sub>R1</sub> + <sup>1</sup>&frasl;<sub>R2</sub> + <sup>1</sup>
+&frasl;<sub>R3</sub>
 
 ## Zdroje napětí
 
@@ -123,12 +126,12 @@ měkké zdroje (vnitřní odpor větší než 1 Ω) a tvrdé zdroje (vnitřní o
 
 - Měnič napětí (adaptér, transformátor)
 - chemické zdroje (galvanické články)
-  - **Nenabíjecí** - voltův článek, salmiakový článek,lithiový článek, alkalický článek
-  - **Nabíjecí** - Olověný akumulátor, alkalický akumulátor
+    - **Nenabíjecí** - voltův článek, salmiakový článek,lithiový článek, alkalický článek
+    - **Nabíjecí** - Olověný akumulátor, alkalický akumulátor
 - mechanické zdroje - generátory (dynamo pro stejnosměrný proud, alternátor pro střídavý proud)
 - tepelné zdroje - termoelektrický článek,
 - fotoelektrické zdroje - Fotovoltaický článek (sluneční článek),
-  
+
 **Schematické značky:**
 ![Zdroje](https://dwma4bz18k1bd.cloudfront.net/tutorials/AC-DC-Voltage-Source-Schematic-Symbol.png)
 
@@ -238,7 +241,8 @@ Exklusivní logický součet – má na výstupu log. 1 pouze tehdy, pokud je na
 
 Úroveň elektrického napětí, která určuje stav obvodu. Jelikož jsou informace vyjádřeny binárním číslem rozlišujeme dvě
 napěťově úrovně - vysokou a nízkou. Nízká úroveň se obvykle blíží 0 voltům, vysoká může nabývat různých hodnot (
-5V, 3.3V, 2.5V). Jestli stav logické 0 odpovídá nižšímu napětí na výstupu logického členu nežli stav logické 1, hovoříme o
+5V, 3.3V, 2.5V). Jestli stav logické 0 odpovídá nižšímu napětí na výstupu logického členu nežli stav logické 1, hovoříme
+o
 tzv. pozitivní logice. Je-li tomu naopak, tj. logické 0 odpovídá vyšší napětí nežli logické 1, pak se jedná o negativní
 logiku.
 
@@ -293,7 +297,6 @@ Pro A = 10 a B = 10:
 Používá se pro detekci vzniku chyb v binárním kódu. Generator parity projde binární hodnotu a vygeneruje tzv. paritní
 bit, který se poté používá pro kontrolu binárního kódu. Využívá funkci XOR.
 
-
 **Sudá parita**
 Je-li v binárním kódu sudý počet jedniček, pak je paritní bit 0.
 
@@ -340,12 +343,14 @@ Podle adresy aktivuje jeden vstup a jeho hodnotu předá na výstup.
 Provádí aritmetickou operaci součtu dvou čísel.
 
 ##### Poloviční
+
 Dva vstupy a dva výstupy, chybí ji vstup z předchozího řádu.
 
 ![Pol. sčítačka 1](images/polscitacka2.jpg)
 ![Pol. sčítačka 2](images/polscitacka.jpg)
 
 ##### Úplná binární sčítačka
+
 Má tři vstupy, dva pro sčítání a jeden pro přenos hodnoty z předchozího řádu.
 ![Celá sčítačka 1](images/celscitacka.jpg)
 ![Celá sčítačka 2](images/celscitacka2.jpg)
