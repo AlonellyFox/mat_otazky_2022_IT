@@ -20,7 +20,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [ ] 11 [Principy počítačových sítí LAN a WAN](Společné/11%20Principy%20počítačových%20sítí%20LAN%20a%20WAN.md) - Zdražil P.
 - [x] 12 [Bezpečnost v síťové infrastruktuře](Společné/12%20Bezpečnost%20v%20síťové%20infrastruktuře.md) - Kabeláč D.
 - [ ] 13 Tvorba dokumentů v balíku kancelářských aplikací - Gargulák M.
-- [ ] 14 [Základy elektrotechniky a číslicové logiky](Společné/14%20Základy%20elektrotechniky%20a%20číslicové%20logiky.md) - Koňař L.
+- [ ] 14 [Základy elektrotechniky a číslicové logiky](Společné/14%20Základy%20elektrotechniky%20a%20číslicové%20logiky.md) - Koňař L. ([latex verze](Společné/14%20Základy%20elektrotechniky%20a%20číslicové%20logiky%20-%20latex.md))
 ---
 ### Síťaři
 - [x] 15S [Směrování a směrovací protokoly](Síťaři/15S%20Směrování%20a%20směrovací%20protokoly.md) - Tománek J.

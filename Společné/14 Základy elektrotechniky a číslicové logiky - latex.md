@@ -6,6 +6,10 @@
 
 ---
 
+*Poznámka: Verze tohoto dokumentu je uzpůsobena pro budoucnost za předpokladu, že GitHub přidá podporu pro LaTeX. Do té
+doby můžete buď použít druhou verzi dokumentu nebo si nainstalovat 
+[xhub](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee).*
+
 ## Základní elektrické veličiny
 
 ### Elektrický náboj (Q)
@@ -16,7 +20,7 @@ protonu (kladný náboj).
 
 Základní jednotkou je **Coulomb (C)** - množství elektrického náboje přeneseného proudem 1 A během 1 sekundy.
 
-Velikost elementárního náboje e = 1,602 &times; 10 - 19 C
+Velikost elementárního náboje $`e = 1.602 * 10 - 19 C`$
 
 ### Elektrický proud (I)
 
@@ -24,7 +28,9 @@ Elektrický proud je uspořádaný pohyb částic s elektrickým nábojem (proto
 elektrický
 proud definován množstvím elektrického náboje Q prošlého vodičem za určitý čas t:
 
-I = <sup>Q</sup>&frasl;<sub>t</sub>
+```math
+I = \frac{Q}{t}
+```
 
 Základní jednotkou je **ampér (A)** - náboj o velikosti 1 C, který projde průřezem vodiče za 1 s.
 
@@ -41,7 +47,11 @@ Elektrické napětí je práce potřebná při přemístění náboje o velikost
 Elektrické napětí vzniká mezi tělesy, která jsou v rozdílném elektrickém stavu (mají rozdílný elektrický potenciál).
 Základní jednotkou je **Volt (V)**.
 
-U = <sup>W</sup>&frasl;<sub>Q</sub> (W - práce, Q - náboj)
+(W - práce, Q - náboj)
+
+```math
+U = \frac{W}{Q}
+```
 
 ### Elektrický odpor (R)
 
@@ -53,18 +63,24 @@ metr. Základní jednotkou je Ohm (&Omega;).
 
 Výpočet odporu vodiče (&rho; - rezistivita, L - délka vodiče, S - průřez vodiče):
 
-R = &rho; &times; <sup>L</sup>&frasl;<sub>S</sub>
+```math
+R = \rho * \frac{L}{S}
+```
 
 Opak elektrického odporu je vodivost se základní jednotkou Siemens (S). Vypočítá se jako převrácená hodnota elektrického
 odporu.
 
-G = R<sup>-1</sup>
+```math
+G = R^{-1}
+```
 
 ### Ohmův zákon
 
 Popisuje závislost mezi proudem, napětím a odporem v elektrickém obvodu.
 
-I = <sup>U</sup>&frasl;<sub>R</sub>
+```math
+I = \frac{U}{R}
+```
 
 ## Práce a výkon elektrického proudu
 
@@ -73,16 +89,22 @@ světelná, mechanická, …), neboli práce, kterou konají elektrické síly. 
 
 Práce se vykonává, přesuneme-li náboj Q mezi dvěma místy, mezi nimiž je napětí U.
 
-W = <sup>Q</sup>&frasl;<sub>U</sub>
+```math
+W = \frac{Q}{U}
+```
 
 Prochází-li vodičem, mezi jehož konci je napětí U, proud I po dobu t, vykoná elektrické pole práci
 
-W = U &times; I &times; t
+```math
+W = U * I * t
+```
 
 Elektrický výkon je elektrická práce W vykonaná elektrickým proudem ve vodiči, mezi jehož konci je napětí U, za jednotku
 času. Základní jednotkou je Watt (W)
 
-P = U &times; I
+```math
+P = U * I
+```
 
 ## Zapojení rezistorů
 
@@ -92,15 +114,21 @@ P = U &times; I
 
 Zapojíme-li několik rezistorů za sebou, bude každým zapojeným rezistorem protékat stejný elektrický proud.
 
-I = I1 = I2 = I3
+```math
+I = I_1 = I_2 = I_3
+```
 
 Napětí, na jednotlivých rezistorech, se ale rozdělí.
 
-U= U1 + U2 + U3
+```math
+U = U_1 + U_2 + U_3
+```
 
 Celkový elektrický odpor sériově zapojených rezistorů se rovná součtu odporů jednotlivých rezistorů.
 
-R = R1 + R2 + R3
+```math
+R = R_1 + R_2 + R_3
+```
 
 ### Paralelní
 
@@ -108,16 +136,21 @@ R = R1 + R2 + R3
 
 Napětí na každém ze třech paralelně zapojených rezistorů je přibližně stejné. Je rovno napětí zdroje.
 
-U = U1 = U2 = U3
+```math
+U = U_1 = U_2 = U_3
+```
 
 Celkový elektrický proud I se rozdělí podle velikosti odporu do jednotlivých rezistorů.
 
-I = I1 + I2 + I3
+```math
+I = I_1 + I_2 + I_3
+```
 
 Převrácená hodnota výsledného odporu se rovná součtu převrácených hodnot odporů jednotlivých rezistorů.
 
-<sup>1</sup>&frasl;<sub>R</sub> = <sup>1</sup>&frasl;<sub>R1</sub> + <sup>1</sup>&frasl;<sub>R2</sub> + <sup>1</sup>
-&frasl;<sub>R3</sub>
+```math
+\frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}
+```
 
 ## Zdroje napětí
 
@@ -157,7 +190,7 @@ Značky funkcí (vlevo americké značky, vpravo evropské - ty jsme se učili):
 
 Logická negace (invertor) – na výstupu je vždy opačná logická hodnota než na vstupu.
 
-**Matematický zápis:** Y = &not;A
+**Matematický zápis:** $`Y = \overline{A}`$ nebo $`Y = \neg A`$
 
 **Pravdivostní tabulka:**
 
@@ -170,7 +203,7 @@ Logická negace (invertor) – na výstupu je vždy opačná logická hodnota ne
 
 Logický součet – má na výstupu log. 1 pouze tehdy, pokud je alespoň na jednom vstupu log. 1.
 
-**Matematický zápis:** Y = A + B nebo Y = A &and; B
+**Matematický zápis:** $`Y = A + B`$ nebo $`Y = A \land B`$
 
 **Pravdivostní tabulka:**
 
@@ -185,7 +218,7 @@ Logický součet – má na výstupu log. 1 pouze tehdy, pokud je alespoň na je
 
 Logický součin – má na výstupu log. 1 pouze tehdy, je-li na všech jeho vstupech log. 1.
 
-**Matematický zápis:** Y = A &sdot; B nebo Y = A &or; B
+**Matematický zápis:** $`Y = A \cdot B`$ nebo $`Y = A \lor B`$
 
 **Pravdivostní tabulka:**
 
@@ -201,7 +234,7 @@ Logický součin – má na výstupu log. 1 pouze tehdy, je-li na všech jeho vs
 Negovaný logický součin – má na výstupu log. 1 pouze tehdy, pokud není na všech vstupech log. 1. Je to negovaný (opačný)
 výsledek logického součinu (AND).
 
-**Matematický zápis:** Y = &not;(A &sdot; B)
+**Matematický zápis:** $`Y = \overline{A \cdot B}`$
 
 **Pravdivostní tabulka:**
 
@@ -217,7 +250,7 @@ výsledek logického součinu (AND).
 Negovaný logický součet – má na výstupu log. 1 pouze tehdy, pokud je na všech vstupech log. 0. Je to negovaný (opačný)
 výsledek logického součtu (OR).
 
-**Matematický zápis:** Y = &not;(A + B)
+**Matematický zápis:** $`Y = \overline{A + B}`$
 
 **Pravdivostní tabulka:**
 
@@ -232,7 +265,7 @@ výsledek logického součtu (OR).
 
 Exklusivní logický součet – má na výstupu log. 1 pouze tehdy, pokud je na vstupech rozdílná log. hodnota.
 
-**Matematický zápis:** Y = A &oplus; B
+**Matematický zápis:** $`Y = A \oplus B`$
 
 **Pravdivostní tabulka:**
 
@@ -281,7 +314,7 @@ magnitudový (hodnota A je/není větší než hodnota B)
 | 1   | 0   | 0   |
 | 1   | 1   | 1   |
 
-Y = &not;(A &oplus; B)
+$`Y = \overline{A \oplus B}`$
 
 **2b a více** - porovná každý bit dvou čísel zvlášť funkcí XNOR, výsledné hodnoty jsou poté zpracovány funkcí AND.
 Pro A = 10 a B = 10:
@@ -317,7 +350,7 @@ Je-li v binárním kódu sudý počet jedniček, pak je paritní bit 0.
 | 1   | 1   | 0   | 0        |
 | 1   | 1   | 1   | 1        |
 
-P (sudá)= A &oplus; B &oplus; C
+$`P = A \oplus B \oplus C`$
 
 #### Dekodér 1 z N
 
@@ -334,10 +367,15 @@ jeden výstup hodnotu 1.
 | 1   | 0   | 0   | 0   | 1   | 0   |
 | 1   | 1   | 0   | 0   | 0   | 1   |
 
-Y0 = &not;A &sdot; &not;B \
-Y1 = &not;A &sdot; B \
-Y2 = A &sdot; &not;B \
-Y3 = A &sdot; B
+```math
+Y_0 = \overline{A} \cdot \overline{B}\\
+
+Y_1 = \overline{A} \cdot B\\
+
+Y_2 = A \cdot \overline{B}\\
+
+Y_3 = A \cdot B\\
+```
 
 #### Multiplexor (přepínač)
 
