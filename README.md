@@ -19,7 +19,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 10 [Hypertext, kaskádové styly a webové skriptování](Společné/10%20Hypertext,%20kaskádové%20styly%20a%20webové%20skriptování.md) - Žluva A.
 - [ ] 11 [Principy počítačových sítí LAN a WAN](Společné/11%20Principy%20počítačových%20sítí%20LAN%20a%20WAN.md) - Zdražil P.
 - [x] 12 [Bezpečnost v síťové infrastruktuře](Společné/12%20Bezpečnost%20v%20síťové%20infrastruktuře.md) - Kabeláč D.
-- [ ] 13 Tvorba dokumentů v balíku kancelářských aplikací - Gargulák M.
+- [x] 13 Tvorba dokumentů v balíku kancelářských aplikací - Gargulák M.
 - [ ] 14 Základy elektrotechniky a číslicové logiky - Koňař L.
 ---
 ### Síťaři
