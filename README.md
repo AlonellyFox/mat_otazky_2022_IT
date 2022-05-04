@@ -11,7 +11,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 2 [Procesory pro PC](Společné/2%20Procesory%20pro%20PC.md) - Píšek L.
 - [x] 3 [Architektura počítačů IBM-PC](Společné/3%20Architektura%20IBM%20PC.md) - Táborský R.
 - [x] 4 [Periferní zařízení PC](Společné/4%20Standartní%20periferní%20zařízeními.md) - Pijáček M.
-- [x] 5 Bootování operačního systému a souborové systémy - Gospoš R.
+- [x] 5 [Bootování operačního systému a souborové systémy](Společné/5%20Bootování%20operačního%20systému%20a%20souborové%20systémy.md) - Gospoš R.
 - [ ] 6 Správa procesů a paměti v operačních systémech
 - [x] 7 [Algoritmizace a programovací jazyk Python](Společné/7%20Algoritmizace.md) - Táborský R.
 - [ ] 8 Prezentační nástroj a multimédia - Klícha M.
@@ -20,7 +20,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [ ] 11 [Principy počítačových sítí LAN a WAN](Společné/11%20Principy%20počítačových%20sítí%20LAN%20a%20WAN.md) - Zdražil P.
 - [x] 12 [Bezpečnost v síťové infrastruktuře](Společné/12%20Bezpečnost%20v%20síťové%20infrastruktuře.md) - Kabeláč D.
 - [ ] 13 Tvorba dokumentů v balíku kancelářských aplikací - Gargulák M.
-- [ ] 14 Základy elektrotechniky a číslicové logiky - Koňař L.
+- [ ] 14 [Základy elektrotechniky a číslicové logiky](Společné/14%20Základy%20elektrotechniky%20a%20číslicové%20logiky.md) - Koňař L.
 ---
 ### Síťaři
 - [x] 15S [Směrování a směrovací protokoly](Síťaři/15S%20Směrování%20a%20směrovací%20protokoly.md) - Tománek J.
