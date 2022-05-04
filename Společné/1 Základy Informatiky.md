@@ -112,7 +112,7 @@ Kilo je 1 000, mega je 1 000 000, giga 1 000 000 000, atd.
 
 * **1 bit** – základní jednotka informace - **1** nebo **0**
 * **1 B** (byte) = **8 bitů** (256 hodnot)
-* **1 kB** (kilobyte) = **1000 b**
+* **1 kB** (kilobyte) = **1000 B**
 * **1 kiB** (kibibyte) = 2<sup>10</sup> B = **1024 B**
 * **1 MiB** (mebibyte) = 2<sup>20</sup> B = **1 048 576 B**
 * **Word** = **2 B**

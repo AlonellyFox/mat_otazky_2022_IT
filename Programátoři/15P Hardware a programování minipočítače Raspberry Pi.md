@@ -1,6 +1,8 @@
 # 15P. Hardware a programování minipočítače Raspberry Pi
 
-> Architektura ARM-A, popis parametrů a možností – porovnání s PC, rozhraní GPIO a jeho popis. Výběr a instalace OS, konfigurace. Využití jazyka Python k programování na RPi3. Připojení periferií k RPi3, RPi.GPIO. Princip programování statických výstupních periferií (řada LED, 7Segm) a dynamických periferií (3x7Segm, reproduktor), vstupní periferie.
+> Architektura ARM-A, popis parametrů a možností – porovnání s PC, rozhraní GPIO a jeho popis. Výběr a instalace OS,
+> konfigurace. Využití jazyka Python k programování na RPi3. Připojení periferií k RPi3, RPi.GPIO. Princip programování
+> statických výstupních periferií (řada LED, 7Segm) a dynamických periferií (3x7Segm, reproduktor), vstupní periferie.
 
 ---
 
@@ -58,7 +60,8 @@ jako [Rufus](https://rufus.ie/en/) nebo
 
 ## Používání GPIO
 
-Příklady kódů pro práci s GPIO se nachází [na moodle](https://moodle.roznovskastredni.cz/course/view.php?id=17#section-1).
+Příklady kódů pro práci s GPIO se
+nachází [na moodle](https://moodle.roznovskastredni.cz/course/view.php?id=17#section-1).
 
 ### Programování a zapojení 7 segmentového displeje
 
