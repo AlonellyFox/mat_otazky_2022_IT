@@ -85,8 +85,8 @@ Umožňuje:
 
 ## popis prostředí
 
-![vzorec](popisProstrediKikin.png#gh-dark-mode-only)
-![vzorec](popisProstrediKikin.png#gh-light-mode-only)
+![vzorec](images/popisProstrediKikin.png#gh-dark-mode-only)
+![vzorec](images/popisProstrediKikin.png#gh-light-mode-only)
 
 ## formátování tabulek
 
@@ -131,8 +131,8 @@ A$1
 * funkce se vybírají ze seznamu funkcí 
 * zadání se ukončuje potvrzením ENTER
 
-![vzorec](Obrázek1.gif#gh-dark-mode-only)
-![vzorec](Obrázek1.gif#gh-light-mode-only)
+![vzorec](images/Obrázek1.gif#gh-dark-mode-only)
+![vzorec](images/Obrázek1.gif#gh-light-mode-only)
 
 ## tvorba grafů
 
