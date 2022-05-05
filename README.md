@@ -25,7 +25,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 ### Síťaři
 - [x] 15S [Směrování a směrovací protokoly](Síťaři/15S%20Směrování%20a%20směrovací%20protokoly.md) - Tománek J.
 - [x] 16S [Segmentace sítí - VLAN](Síťaři/16S%20Segmentace%20sítí%20-%20VLAN.md) - Kukučka O.
-- [ ] 17S Wi-Fi a VF technika - Sniegoň J.
+- [x] 17S Wi-Fi a VF technika - Sniegoň J.
 - [x] 18S [Základní správa OS Linux a Windows](Síťaři/18S%20Základní%20správa%20OS%20Windows%20and%20linux.md) - Kukučka O.
 - [x] 19S Hardware podnikových řešení - Zdražil P.
 - [x] 20S [Správa OS Windows v PowerShellu](Síťaři/20S%20Správa%20OS%20Windows%20v%20PowerShellu.md) - Zdražil P.
@@ -33,11 +33,11 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 ---
 ### Programátoři
 - [x] 15P [Hardware a programování minipočítače Raspberry Pi](Programátoři/15P%20Hardware%20a%20programování%20minipočítače%20Raspberry%20Pi.md) - Táborský R.
-- [ ] 16P Programování na platformě Android v jazyku Java - Cerman J.
+- [x] 16P Programování na platformě Android v jazyku Java - Cerman J.
 - [x] 17P [Pokročilé skriptování na straně klienta a serveru](Programátoři/17P%20Pokročilé%20skriptování%20na%20straně%20klienta%20a%20serveru.md) - Matulík M.
 - [x] 18P [Desktopové programování v jazyku Java (SE)](Programátoři/18P%20Desktopové%20programování%20v%20jazyku%20Java%20(SE).md) - Žluva A.
 - [x] 19P [Databázový systém MySQL](Programátoři/19P%20Databázový%20systém%20MySQL.md) - Hodulák F.
 - [x] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
 
-***Updated 04. 05. 2022***
+***Updated 05. 05. 2022***
