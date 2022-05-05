@@ -15,7 +15,7 @@ Používají se následující **polyadické** číselné soustavy:
 * Desítková (decimální)
 * Šestnáctková (hexadecimální)
 
-První počítače byli na bázi desítkové soustavy, s příchodem Von Neumanna se začala používat binární
+První počítače byly na bázi desítkové soustavy, s příchodem Von Neumanna se začala používat binární
 
 ### Dvojková
 
