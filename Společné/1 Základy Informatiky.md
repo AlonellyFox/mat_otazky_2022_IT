@@ -194,7 +194,8 @@ Digitální přenos nebo přenos dat tradičně patří do oblasti telekomunikac
 dat jsou pokryty v oboru datové komunikace. To zahrnuje také počítačové sítě, počítačové komunikační aplikace a síťové
 protokoly, například směrování a meziprocesovou komunikaci.
 
-Následující obrázek zobrazuje digitální signál žlutě a analogový modře:
+Následující obrázek ukazuje porovnání mezi digitálním a analogovým signálem. Digitální signál má pouze rovné čáry,
+kdežto signál analogový se křiví.
 
 ![Ukázka rozdílu mezi analogovým a digitálním přenosem](images/analogový%20a%20digitální%20signál%20-%20light.png#gh-light-mode-only)
 ![Ukázka rozdílu mezi analogovým a digitálním přenosem](images/analogový%20a%20digitální%20signál%20-%20dark.png#gh-dark-mode-only)
