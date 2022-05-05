@@ -27,7 +27,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 16S [Segmentace sítí - VLAN](Síťaři/16S%20Segmentace%20sítí%20-%20VLAN.md) - Kukučka O.
 - [ ] 17S Wi-Fi a VF technika - Sniegoň J.
 - [x] 18S [Základní správa OS Linux a Windows](Síťaři/18S%20Základní%20správa%20OS%20Windows%20and%20linux.md) - Kukučka O.
-- [x] 19S Hardware podnikových řešení - Zdražil P.
+- [x] 19S [Hardware podnikových řešení](Síťaři/19S%20Hardware%20podnikových%20řešení.md) - Zdražil P.
 - [x] 20S [Správa OS Windows v PowerShellu](Síťaři/20S%20Správa%20OS%20Windows%20v%20PowerShellu.md) - Zdražil P.
 - [x] 21S [Interpret Bash](Síťaři/21S%20Interpret%20Bash.md) - Zdražil P.
 ---
@@ -40,4 +40,4 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
 
-***Updated 04. 05. 2022***
+***Updated 05. 05. 2022***
