@@ -7,8 +7,7 @@
 ---
 
 *Poznámka: Verze tohoto dokumentu je uzpůsobena pro budoucnost za předpokladu, že GitHub přidá podporu pro LaTeX. Do té
-doby můžete buď použít druhou verzi dokumentu nebo si nainstalovat 
-[xhub](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee).*
+doby můžete buď použít druhou verzi dokumentu nebo si nainstalovat [xhub](https://chrome.google.com/webstore/detail/xhub/anidddebgkllnnnnjfkmjcaallemhjee).*
 
 ## Základní elektrické veličiny
 

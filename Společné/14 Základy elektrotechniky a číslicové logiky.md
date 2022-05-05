@@ -116,8 +116,7 @@ I = I1 + I2 + I3
 
 Převrácená hodnota výsledného odporu se rovná součtu převrácených hodnot odporů jednotlivých rezistorů.
 
-<sup>1</sup>&frasl;<sub>R</sub> = <sup>1</sup>&frasl;<sub>R1</sub> + <sup>1</sup>&frasl;<sub>R2</sub> + <sup>1</sup>
-&frasl;<sub>R3</sub>
+<sup>1</sup>&frasl;<sub>R</sub> = <sup>1</sup>&frasl;<sub>R1</sub> + <sup>1</sup>&frasl;<sub>R2</sub> + <sup>1</sup>&frasl;<sub>R3</sub>
 
 ## Zdroje napětí
 
