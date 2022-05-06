@@ -1,102 +1,87 @@
-# 20. Spr�va OS Windows v PowerShellu
+# 20. Správa OS Windows v PowerShellu
 
-PowerShell je automatizace �loh pro r�zn� platformy a rozhran� pro spr�vu konfigurace, kter� se
-skl�d� z prost�ed� p��kazov�ho ��dku a skriptovac�ho jazyka. Na rozd�l od v�t�iny prost�ed�, kter�
-p�ij�maj� a vracej� text, je PowerShell postaven nad modulem CLR (Common Language
-Runtime) .NET a p�ij�m� a vrac� objekty .NET. Tato z�sadn� zm�na p�in�� zcela nov� n�stroje a
+PowerShell je automatizace úloh pro různé platformy a rozhraní pro správu konfigurace, která se
+skládá z prostředí příkazového řádku a skriptovacího jazyka. Na rozdíl od většiny prostředí, která
+přijímají a vracejí text, je PowerShell postaven nad modulem CLR (Common Language
+Runtime) .NET a přijímá a vrací objekty .NET. Tato zásadní změna přináší zcela nové nástroje a
 metody pro automatizaci.
 
-```
-Zap�n� se naps�n�m PowerShell do p��kazov� ��dky ve windows.
-```
-##  Z�kladn� p��kazy
+Zapíná se napsáním PowerShell do příkazové řádky ve windows.
+##  Základní příkazy
 
-```
-- cls - vy�ist� p��kazovou ��dku PS, cls je alias pro Clear-Host
-- Get-Alias - Vyp�e seznam pou�iteln�ch alias� v PS
-- Get-History - vyp�e historii zadan�ch p��kaz�
-- .\n�zevSouboru.p��pona - otev�e soubor (V�dycky zap�nejte PowerShell jako spr�vce,
-jinak to nic nebude um�t)
-- PowerShell ISE - je hlavn� pro psan� script�
-- Start-Transcript - v�e co �lov�k nap�e a PS vyp�e se ulo�� do tex��ku - nen� nutn�, ale
-lep�� pro spr�vu
-- Get-PSDrive - vyp�e dostupn� disky
-- Get-Help *jak�koliv p��kaz* - vyp�e informace o dan�m p��kazu
-- Get-Help Get-Command -Examples - vyp�e mo�n� pou�it� p��kazu
-- Get-Command -noun S* - Vyp�e v�echny p��kaz u kter�ch za��n� P.Jm�no �S�
-- Get-Command -noun service - Vyp�e pouze p��kazy kter� maj� P.Jm�no service
-- Get-Service - vyp�e v�echny dostupn� slu�by. S jednotliv�mi slu�bami m��eme
+- cls - vyčistí příkazovou řádku PS, cls je alias pro Clear-Host
+- Get-Alias - Vypíše seznam použitelných aliasů v PS
+- Get-History - vypíše historii zadaných příkazů
+- .\názevSouboru.přípona - otevře soubor (Vždycky zapínejte PowerShell jako správce,
+jinak to nic nebude umět)
+- PowerShell ISE - je hlavně pro psaní scriptů
+- Start-Transcript - vše co člověk napíše a PS vypíše se uloží do texťáku - není nutné, ale
+lepší pro správu
+- Get-PSDrive - vypíše dostupné disky
+- Get-Help *jakýkoliv příkaz* - vypíše informace o daném příkazu
+- Get-Help Get-Command -Examples - vypíše možné použití příkazu
+- Get-Command -noun S* - Vypíše všechny příkaz u kterých začíná P.Jméno “S”
+- Get-Command -noun service - Vypíše pouze příkazy které mají P.Jméno service
+- Get-Service - vypíše všechny dostupné služby. S jednotlivými službami můžeme
 manipulovat
-- Get-Process - vypi�e seznam aktivn�ch proces�
+- Get-Process - vypiše seznam aktivních procesů
 - Start-Process notepad.exe - zapne process
-- Stop-Process -Name "N�zevProcesu" -Force - ukon�� proces
-- Get-Process -Name Calculator | Get-Member - vypi� mi proces kalkula�ka | (a z�rove�)
-mi vypi� jeho pou�iteln� vlastnosti a metody
-- Get-Process -Name Calculator | Select-Object \* - vypi� mi proces kalkula�ka | (a z�rove�)
-mi vypi� detailn� jeho vlastnosti
-```
-## Prom�nn�
+- Stop-Process -Name "NázevProcesu" -Force - ukončí proces
+- Get-Process -Name Calculator | Get-Member - vypiš mi proces kalkulačka | (a zároveň)
+mi vypiš jeho použitelné vlastnosti a metody
+- Get-Process -Name Calculator | Select-Object \* - vypiš mi proces kalkulačka | (a zároveň)
+mi vypiš detailně jeho vlastnosti
+## Proměnné
 
-```powershell
 - PS C:\Windows\System32> $promenna = 123
 - PS C:\Windows\System32> $promenna
 > 123
-```
-```powershell
 - $promenna2 = Get-Process Calculator
 - $promenna
-- $promenna2.\*TAB\* - vyp�e po jednom vlastnosti prom�nn�
-- $promenna2.kill() - vypne kalkula�ku, ale prom�nn� bude d�l existovat
-```
+- $promenna2.\*TAB\* - vypíše po jednom vlastnosti proměnné
+- $promenna2.kill() - vypne kalkulačku, ale proměnná bude dál existovat
 ## Cmdlety
 
-*Cmdlet* pat�� mezi specializovan� p��kazy v prost�ed� PowerShellu, kter� implementuj� specifick�
-funkce. Cmdlety jsou pojmenovan� tak, �e za��naj� *slovesem* , pak n�sleduje znak *poml�ka* a pak je
-*podstatn� jm�no* ( *Get-ChildItem* ), tento styl pojmenov�n� dovoluje v�sti�n�j�� pojmenov�n�
-jednotliv�ch p��kaz�. Cmdlety jako v�sledek mohou vr�tit *objekt a kolekce* (p��padn� pole objekt�).
+Cmdlet patří mezi specializované příkazy v prostředí PowerShellu, které implementují specifické
+funkce. Cmdlety jsou pojmenované tak, že začínají slovesem , pak následuje znak pomlčka a pak je
+podstatné jméno ( Get-ChildItem ), tento styl pojmenování dovoluje výstižnější pojmenování
+jednotlivých příkazů. Cmdlety jako výsledek mohou vrátit objekt a kolekce (případně pole objektů).
 
-Cmdlet m��e b�t naps�n v jak�mkoliv jazyce, kter� podporuje platformu .NET (nap��klad C#,
-VB.NET, IronPython, PHP, J# a jin�).
+Cmdlet může být napsán v jakémkoliv jazyce, který podporuje platformu .NET (například C#,
+VB.NET, IronPython, PHP, J# a jiné).
 
 - Objekty, roury, aliasy
 
 ## OBJEKTY
 
-K vytvo�en� objektu v PS je nejprve zapot�eb� pou��t cmdlet **_New-Object_** k vytvo�en� po��te�n�ho
-objektu. Tento p��kaz vytvo�� *.NET* nebo *COM* objekt ze sortimentu t��d. Klasick� objekt je *.NET*
-zalo�en� na Objektu nebo PSObjektu. Av�ak PSObjekt je preferovan� kv�i probl�m�m, kter� mohou
-nstat p�i p�id�v�n� vlastnost� k objektu zalo�en�ho na t��d� Objekt.
+K vytvoření objektu v PS je nejprve zapotřebí použít cmdlet *_New-Object_* k vytvoření počátečního
+objektu. Tento příkaz vytvoří .NET nebo COM objekt ze sortimentu tříd. Klasický objekt je .NET
+založený na Objektu nebo PSObjektu. Avšak PSObjekt je preferovaný kvůi problémům, které mohou
+nstat při přidávání vlastností k objektu založeného na třídě Objekt.
 
-K vytvo�en� objektu zalo�en�ho na PSObjektu pot�ebujete pou��t *New-Object* s *�TypeName*
-parametrem, abyste specifikovali typ/t��du objektu.
+K vytvoření objektu založeného na PSObjektu potřebujete použít New-Object s –TypeName
+parametrem, abyste specifikovali typ/třídu objektu.
 
-```powershell
 $system = New-Object -TypeName PSObject
-Kdy� spust�te tento p��kaz, vygeneruje to PSCustomObject a zap�e se do prom�nn� $system
-```
+Když spustíte tento příkaz, vygeneruje to PSCustomObject a zapíše se do proměnné $system
 ## ROURY
 
-Roura zapoj� v�ce p��kaz� a jeden p��kaz, p�ed�v� sv�j v�stup dal��mu p��kazu, ten dal��mu a to a�
-do v�sledku na obrazovce.
+Roura zapojí více příkazů a jeden příkaz, předává svůj výstup dalšímu příkazu, ten dalšímu a to až
+do výsledku na obrazovce.
 
-```
-Jednotliv� p��kazy n�m odd�luje 
-```
+Jednotlivé příkazy nám odděluje 
 ## ALIASY
 
-Rutina Get-Alias z�sk� aliasy v aktu�ln� relaci. To zahrnuje vestav�n� aliasy, aliasy, kter� jste
-nastavili nebo importovali, a aliasy, kter� jste p�idali do sv�ho profilu PowerShell.
+Rutina Get-Alias získá aliasy v aktuální relaci. To zahrnuje vestavěné aliasy, aliasy, které jste
+nastavili nebo importovali, a aliasy, které jste přidali do svého profilu PowerShell.
 
-Ve v�choz�m nastaven� **_Get-Alias_** alias a vrac� n�zev p��kazu. P�i pou�it� parametru Definice z�sk�
-Get-Alias n�zev p��kazu a vrac� jeho aliasy.
+Ve výchozím nastavení *_Get-Alias_* alias a vrací název příkazu. Při použití parametru Definice získá
+Get-Alias název příkazu a vrací jeho aliasy.
 
-```powershell
 ? Get-Alias
 [[-Name] <String[]>]
 [-Exclude <String[]>]
-```
 
-```powershell
 [-Scope <String>]
 [<CommonParameters>]
 ? Get-Alias
@@ -104,91 +89,81 @@ Get-Alias n�zev p��kazu a vrac� jeho aliasy.
 [-Scope <String>]
 [-Definition <String[]>]
 [<CommonParameters>]
-```
-- P��stup k souborov�mu syst�mu, registru a ��t�m
+- Přístup k souborovému systému, registru a účtům
 
 ## REGISTRY
 
-**New-Item -Path "HKCU:\brambora" -** vytvo�� nov� registr
-**New-ItemProperty -Path "HKCU:\brambora" -Name Pokus -Value 12345 -PropertyType** string -
-p�id�me vlastnosti registru
+*New-Item -Path "HKCU:\brambora" -* vytvoří nový registr
+*New-ItemProperty -Path "HKCU:\brambora" -Name Pokus -Value 12345 -PropertyType* string -
+přidáme vlastnosti registru
 
-**Set-ItemProperty -Path "HKCU:\brambora" -Name Pokus -Value 54321 -** zm�na vlastnost�
+*Set-ItemProperty -Path "HKCU:\brambora" -Name Pokus -Value 54321 -* změna vlastností
 registru
-**Get-Item -Path HKCU:\Brambora -** vyp�e hodnoty registru
-**Remove-ItemProperty -Path HKCU:\Brambora -name pokus -** Vyma�e hodnotu registru
-**Remove-Item -Path HKCU:\Brambora -** vyma�e registr
+*Get-Item -Path HKCU:\Brambora -* vypíše hodnoty registru
+*Remove-ItemProperty -Path HKCU:\Brambora -name pokus -* Vymaže hodnotu registru
+*Remove-Item -Path HKCU:\Brambora -* vymaže registr
 
-## U�IVATEL�
+## UŽIVATELÉ
 
-**Get-LocalUser -** vyp�e seznam u�ivatel�
-**New-LocalUser "Pepa" -Password 123456 -FullName "Pepa Z Depa" -Description "Pokusn�
-kr�l�k" -** Vytvo�� nov�ho u�ivatele Pepa
-**Add-LocalGroupMember -Group "Users" -Member "Pepa" -** p��d� u�ivatele pepa do skupiny
+*Get-LocalUser -* vypíše seznam uživatelů
+**New-LocalUser "Pepa" -Password 123456 -FullName "Pepa Z Depa" -Description "Pokusný
+králík" -** Vytvoří nového uživatele Pepa
+*Add-LocalGroupMember -Group "Users" -Member "Pepa" -* přídá uživatele pepa do skupiny
 Users
-**Remove-LocalUser -Name "Pepa" -** odstran� u�ivatele
+*Remove-LocalUser -Name "Pepa" -* odstraní uživatele
 
-```
-v�ce info => Get-Help LocalUser / Get-Help LocalGroup
-```
-- Pr�ce s ACL
-**_Set-Acl_** m�n� popis zabezpe�en� ur�it� polo�ky, jako je slo�ka nebo kl�� registru, aby odpov�dal
-hodnot�m popisu zabezpe�en�, kter� jsi doplnil.
+více info => Get-Help LocalUser / Get-Help LocalGroup
+- Práce s ACL
+*_Set-Acl_* mění popis zabezpečení určité položky, jako je složka nebo klíč registru, aby odpovídal
+hodnotám popisu zabezpečení, které jsi doplnil.
 
-Chcete-li pou��t **_Set-Acl_** , pou�ijte parametr **_Path_** nebo **_InputObject_** k identifikaci polo�ky, jej�
-popis zabezpe�en� chcete zm�nit. Potom pomoc� parametr� **_AclObject_** nebo **_SecurityDescriptor_**
-zadejte popis zabezpe�en�, kter� maj� hodnoty, kter� chcete pou��t. **_Set-Acl_** pou�ije pou�it� popis
-zabezpe�en�.
+Chcete-li použít *_Set-Acl_* , použijte parametr *_Path_* nebo *_InputObject_* k identifikaci položky, jejíž
+popis zabezpečení chcete změnit. Potom pomocí parametrů *_AclObject_* nebo *_SecurityDescriptor_*
+zadejte popis zabezpečení, které mají hodnoty, které chcete použít. *_Set-Acl_* použije použití popis
+zabezpečení.
 
-```powershell
 Set-Acl
-```
-```powershell
 [-Path] <String[]>
 [-InputObject] <PSObject>
 [-AclObject] <Object>
 [-ClearCentralAccessPolicy]
 [-Passthru]
 [-Filter <String>]
-```
 
-```powershell
 [-Include <String[]>]
 [-Exclude <String[]>]
 [-WhatIf]
 [-Confirm]
 [<CommonParameters>]
-```
-- P��stup k WMI (cmdlet pro wmi, z�sk�n� informac�), Z�sk�v�n� informac� o
+- Přístup k WMI (cmdlet pro wmi, získání informací), Získávání informací o
 
 ## Objektech
 
-```powershell
-Get-CimInstance -ClassName Win32_Desktop #Tato funkce vr�t� informace pro v�echny pracovn� plochy, a� u� jsou pou��v�ny.
-Get-CimInstance -ClassName Win32_BIOS #T��da WMI Win32_BIOS vr�t� pom�rn� kompaktn� a �pln� informace o syst�mu BIOS v m�stn�m po��ta�i.
+Get-CimInstance -ClassName Win32_Desktop #Tato funkce vrátí informace pro všechny pracovní plochy, ať už jsou používány.
+Get-CimInstance -ClassName Win32_BIOS #Třída WMI Win32_BIOS vrátí poměrně kompaktní a úplné informace o systému BIOS v místním počítači.
 Get-CimInstance -ClassName Win32_Processor | Select-Object -ExcludeProperty "CIM*"
-```
-- Obecn� informace o procesoru m��ete na��st pomoc� Win32_Processor t��dy WMI, i
-kdy� budete pravd�podobn� cht�t tyto informace filtrovat
-- **Get-CimInstance -ClassName Win32_ComputerSystem -** V�pis v�robce a modelu po��ta�e
-- **Get-CimInstance -ClassName Win32_OperatingSystem | Select-Object -Property *user*
--** V�pis m�stn�ch u�ivatel� a vlastn�k�
-- **Get-CimInstance -ClassName Win32_LocalTime** - Z�sk�n� m�stn�ho �asu z po��ta�e
+- Obecné informace o procesoru můžete načíst pomocí Win32_Processor třídy WMI, i
+když budete pravděpodobně chtít tyto informace filtrovat
+- *Get-CimInstance -ClassName Win32_ComputerSystem -* Výpis výrobce a modelu počítače
+- *Get-CimInstance -ClassName Win32_OperatingSystem | Select-Object -Property *user
+-** Výpis místních uživatelů a vlastníků
+- *Get-CimInstance -ClassName Win32_LocalTime* - Získání místního času z počítače
 - **Get-CimInstance -ClassName Win32_Service | Select-Object -Property
-Status,Name,DisplayName -** Pokud chcete zobrazit stav v�ech slu�eb v ur�it�m po��ta�i,
-m��ete pou��t Get-Service rutinu m�stn�. Pro vzd�len� syst�my m��ete pou��t
-Win32_Service t��dy WMI. Pokud pou�ijete Select-Object k filtrov�n� v�sledk� na stav,
-n�zeva Zobrazovan�n�zev, bude v�stupn� form�t t�m�� toto�n� s t�mto form�tem Get-
+Status,Name,DisplayName -** Pokud chcete zobrazit stav všech služeb v určitém počítači,
+můžete použít Get-Service rutinu místně. Pro vzdálené systémy můžete použít
+Win32_Service třídy WMI. Pokud použijete Select-Object k filtrování výsledků na stav,
+názeva Zobrazovanýnázev, bude výstupní formát téměř totožný s tímto formátem Get-
 Service
-- Clipboard (schr�nkou � ctrl + c/v)
+- Clipboard (schránkou – ctrl + c/v)
 
-- **_Set-Clipboard -Value "Tohle je pokus"_** **-** vlo�� tento text do schr�nky a kdy� pak n�kde
-zm��nete ctrl+v tak se vlo�� �Tohle je pokus�
-- **_Get-Date | Set-Clipboard_** **-** �05/22/2019 23:07:21�
-- **_Get-Date |Out-String | Set-Clipboard_** - "st�eda 22. kv�tna 2019 23:07:54�
+- *_Set-Clipboard -Value "Tohle je pokus"_*
+*-* vloží tento text do schránky a když pak někde
+zmáčnete ctrl+v tak se vloží “Tohle je pokus”
+- *_Get-Date | Set-Clipboard_*
+*-* “05/22/2019 23:07:21”
+- *_Get-Date |Out-String | Set-Clipboard_* - "středa 22. května 2019 23:07:54”
 
 ```
 Autor: Zdražil Patrik
-Merger: Zdražil Patrik
-Datum: 29.4.2022
+Datum: 6. 5. 2022
 ```
