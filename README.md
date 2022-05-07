@@ -14,10 +14,10 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 5 [Bootování operačního systému a souborové systémy](Společné/5%20Bootování%20operačního%20systému%20a%20souborové%20systémy.md) - Gospoš R.
 - [x] 6 [Správa procesů a paměti v operačních systémech](Společné/6%20Správa%20paměti%20a%20procesů.md) - Zdražil P.
 - [x] 7 [Algoritmizace a programovací jazyk Python](Společné/7%20Algoritmizace.md) - Táborský R.
-- [ ] 8 Prezentační nástroj a multimédia - Klícha M.
+- [x] 8 [Prezentační nástroj a multimédia](Společné/8%20Prezentační%20nástroj%20a%20multimédia.md) - Klícha M.
 - [ ] 9 Databáze - Stacha V.
 - [x] 10 [Hypertext, kaskádové styly a webové skriptování](Společné/10%20Hypertext,%20kaskádové%20styly%20a%20webové%20skriptování.md) - Žluva A.
-- [ ] 11 [Principy počítačových sítí LAN a WAN](Společné/11%20Principy%20počítačových%20sítí%20LAN%20a%20WAN.md) - Zdražil P.
+- [x] 11 [Principy počítačových sítí LAN a WAN](Společné/11%20Principy%20počítačových%20sítí%20LAN%20a%20WAN.md) - Zdražil P.
 - [x] 12 [Bezpečnost v síťové infrastruktuře](Společné/12%20Bezpečnost%20v%20síťové%20infrastruktuře.md) - Kabeláč D.
 - [x] 13 [Tvorba dokumentů v balíku kancelářských aplikací](Společné/13%20Tvorba%20dokumentů%20v%20balíku%20kancelářských%20aplikací.md) - Gargulák M.
 - [ ] 14 [Základy elektrotechniky a číslicové logiky](Společné/14%20Základy%20elektrotechniky%20a%20číslicové%20logiky.md) - Koňař L. ([latex verze](Společné/14%20Základy%20elektrotechniky%20a%20číslicové%20logiky%20-%20latex.md))
@@ -25,7 +25,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 ### Síťaři
 - [x] 15S [Směrování a směrovací protokoly](Síťaři/15S%20Směrování%20a%20směrovací%20protokoly.md) - Tománek J.
 - [x] 16S [Segmentace sítí - VLAN](Síťaři/16S%20Segmentace%20sítí%20-%20VLAN.md) - Kukučka O.
-- [ ] 17S Wi-Fi a VF technika - Sniegoň J.
+- [x] 17S [Wi-Fi a VF technika](Síťaři/17S%20Wi-Fi%20a%20VF%20technika.md) - Kabeláč D.
 - [x] 18S [Základní správa OS Linux a Windows](Síťaři/18S%20Základní%20správa%20OS%20Windows%20and%20linux.md) - Kukučka O.
 - [x] 19S [Hardware podnikových řešení](Síťaři/19S%20Hardware%20podnikových%20řešení.md) - Zdražil P.
 - [x] 20S [Správa OS Windows v PowerShellu](Síťaři/20S%20Správa%20OS%20Windows%20v%20PowerShellu.md) - Zdražil P.
@@ -40,4 +40,4 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
 
-***Updated 05. 05. 2022***
+***Updated 07. 05. 2022***
