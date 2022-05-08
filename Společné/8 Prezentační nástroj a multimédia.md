@@ -42,27 +42,21 @@ Používané vzorkovací frekvence:
 Aby při vzorkování nedošlo k tzv. aliasingu (výsledný signál obsahuje frekvence, které v něm vůbec nebyli), musí být Nyquist–Shannonova teorému zvolit dvakrát větší vzorkovací frekvenci, než je frekvence nejvyšší. K zabránění aliasingu se ještě
 před vzorkováním používá filtr typu dolní propust. 
 
-Rozdělení audioformátů
-Bezestrátová komprese
+## Rozdělení audioformátů
+### Bezestrátová komprese
 I po komprimaci zachovávají soubory identickou informaci s předlohou. Nedochází tak ke ztrátě kvality obrazu. Obvykle není tak účinná jako ztrátová komprese dat.
 
-WAV (Wave format) byl vytvořen firmou Microsoft pro platformu PC/Windows. Dnes se používá jako univerzální formát. Data uvnitř jsou nezkomprimované navzorkované zvuky podobně jako na Audio CD. Zvuk může být mono či stereo, s různou frekvencí vzorkování a bitovou hloubkou 8 nebo 16 bitů. CD kvalita je Stereo, 44100 Hz, 16 b.
-FLAC
-Free lossless Audio Codec, kompresní poměr kolem 60%
-Kodek FLAC
-WMA
+* WAV (Wave format) byl vytvořen firmou Microsoft pro platformu PC/Windows. Dnes se používá jako univerzální formát. Data uvnitř jsou nezkomprimované navzorkované zvuky podobně jako na Audio CD. Zvuk může být mono či stereo, s různou frekvencí vzorkování a bitovou hloubkou 8 nebo 16 bitů. CD kvalita je Stereo, 44100 Hz, 16 b.
+* FLAC Free lossless Audio Codec, kompresní poměr kolem 60%
+* WMA
 Bezeztrátový formát pro Windows Media
 Kodek WMA 9 lossless
 
-Ztrátová komprese
+### Ztrátová komprese
 Při kompresi zahazují část grafické informace. Používá se tam, kde je možné ztrátu některých informací tolerovat a kde nevýhoda určitého zkreslení je bohatě vyvážena velmi významným zmenšením souboru.
-MP3
-MP3 (MPEG-1 Audio Layer-3) je standardní technologie a formát pro kompresi zvuku do velmi malého souboru (poměr 1:12 při zachování kvality). Míru komprimace udává takzvaný bitrate, počet bitů, které při přehrávání "spotřebujete" za sekundu. Nejčastěji se setkáte s bitrate 128 Kb/s, občas 192 Kb/s nebo i se soubory s proměnným bitrate. Komprese je založena na ořezání záznamu o zvuky, které lidský mozek stejně nemůže vnímat. Můžete se setkat i se starší verzí MP2. Vhodný pro přenos audio souborů po Internetu.
-
-VQF 
-je zvukový formát vyvinutý firmou Yamaha, je to alternativní řešení formátu MP3. Dosahuje lepší komprese než MP3. Není příliš rozšířen.
-OGG
-je nový formát založený na podobném modelu jako MP3, nicméně obsahuje řadu vylepšení. Například jde snížit bitrate bez nutnosti soubor překódovat. Díky své vysoké kvalitě se na Internetu prosazuje více a více. Používá ho například i ČRo. Jeho předností je i otevřená licence.
+* MP3 - (MPEG-1 Audio Layer-3) je standardní technologie a formát pro kompresi zvuku do velmi malého souboru (poměr 1:12 při zachování kvality). Míru komprimace udává takzvaný bitrate, počet bitů, které při přehrávání "spotřebujete" za sekundu. Nejčastěji se setkáte s bitrate 128 Kb/s, občas 192 Kb/s nebo i se soubory s proměnným bitrate. Komprese je založena na ořezání záznamu o zvuky, které lidský mozek stejně nemůže vnímat. Můžete se setkat i se starší verzí MP2. Vhodný pro přenos audio souborů po Internetu.
+* VQF - je zvukový formát vyvinutý firmou Yamaha, je to alternativní řešení formátu MP3. Dosahuje lepší komprese než MP3. Není příliš rozšířen.
+* OGG - je nový formát založený na podobném modelu jako MP3, nicméně obsahuje řadu vylepšení. Například jde snížit bitrate bez nutnosti soubor překódovat. Díky své vysoké kvalitě se na Internetu prosazuje více a více. Používá ho například i ČRo. Jeho předností je i otevřená licence.
 
 Základní pojmy z oblasti grafiky a videa
 Digitální Video informace je posloupnost obrázků, které se se rychle střídají tak, aby vznikl dojem plynulého pohybu objektů ve videu. Jeden obrázek se nazývá snímek. Videoinformace se ukládá do multimediálních souborů, jejichž součástí není jenom obraz, ale i zvuk,případně titulky a metainformace.
@@ -77,22 +71,23 @@ Softwarové funkce zajišťující kompresi a dekompresi videa jsou zpravidla uk
 
 Frame Rate 	Rychlost snímků za sekundu, jednotkou je fps (Frames per second). Dnes je standardem 25 fps nebo 30 fps. 
 
-Grafické a zvukové formáty
+## Grafické a zvukové formáty
 
 Bezeztrátové
 * BMP formát bitmapového obrázku a jeho výhodou je jeho extrémní jednoduchost a dobrá dokumentovanost
 * GIF (Graphic Interchange Format) je grafický formát určený pro rastrovou grafiku vytvářenou v počítačích. GIF používá bezeztrátovou kompresi LZW a umožňuje také jednoduché animace. GIF má velké omezení v maximálním počtu 256 (8 bitů) současně použitých barev barevné palety v jednom rámci.
 * PNG (Portable Network Graphics) je grafický formát určený pro bezeztrátovou kompresi rastrové grafiky. Byl vyvinut jako zdokonalení a náhrada formátu GIF.
 * RAW je soubor nijak neupravených digitalizovaných dat ze snímače digitálního fotoaparátu. Formát souboru RAW není nikým definován a soubory z různých fotoaparátů (i od stejné firmy) se mohou značně lišit.
+* 
 Ztrátové
-JPEG (Joint Photographic Experts Group) je standardní a nejrozšířenější metoda ukládání snímků se ztrátovou kompresí používaná pro ukládání digitálních obrázků ve fotorealistické kvalitě.
-HEIF je přípona nového kontejneru pro ukládání obrázků pomocí až dvakrát efektivnější komprese než JPEG (beze ztráty kvality),[1] může obsahovat kódování:
-HEIC (High Efficiency Image File Format) je nový formát, který umožňuje vyšší kompresi beze ztráty kvality (používá ho např. fotoaparát v iPhone od roku 2017),[1] je založena na proprietárním kódování H.265
-AVIF je obdoba formátu HEIC, ale místo uzavřeného H.265 je použit otevřený formát kódování AV1 (Gimp jej podporuje od konce roku 2020)[2]
+* JPEG (Joint Photographic Experts Group) je standardní a nejrozšířenější metoda ukládání snímků se ztrátovou kompresí používaná pro ukládání digitálních obrázků ve fotorealistické kvalitě.
+* HEIF je přípona nového kontejneru pro ukládání obrázků pomocí až dvakrát efektivnější komprese než JPEG (beze ztráty kvality),[1] může obsahovat kódování:
+* HEIC (High Efficiency Image File Format) je nový formát, který umožňuje vyšší kompresi beze ztráty kvality (používá ho např. fotoaparát v iPhone od roku 2017),[1] je založena na proprietárním kódování H.265
+* AVIF je obdoba formátu HEIC, ale místo uzavřeného H.265 je použit otevřený formát kódování AV1 (Gimp jej podporuje od konce roku 2020)[2]
 
-Microsoft Powerpoint
+## Microsoft Powerpoint
 Microsoft PowerPoint je nástroj na tvorbu prezentací z kancelářského balíku Microsoft Office od společnosti Microsoft. Prezentace mohou sloužit pro ukázku různých produktů, služeb, či jiných aktivit. Starší verze používaly koncovku „.ppt“.
-Tvorba prezentace
+### Tvorba prezentace
 Obsah by měl být stručný, heslovitý, případné věty krátké, srozumitelné. srozumitelnost a viditelnost obrázků před prezentací. Videa pouze krátká, k tématu. Minimalizovat použité animace a přechody – volit krátké a přehledné animace stejné v celé prezentaci.
-Šablony 
+### Šablony 
 Zajišťují rozložení textu. Šablonu vybíráme tak aby byl text a obrázky čitelné a neprolínaly se s prezentací.
