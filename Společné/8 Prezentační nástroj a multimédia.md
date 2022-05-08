@@ -1,8 +1,8 @@
 # 8 Prezentační nástroj a multimédia
 
-> Číselné soustavy (dvojková, desítková, šestnáctková), jednotky používané v informatice, data a informace,
-kapacita, přímý kód, zakódování informace (po bitech, po skupině bitů), propustnost, typy přenosů dat, takt a
-frekvence.
+> Zvuk, princip digitalizace analogového signálu. Formáty audio souborů. Základní pojmy z oblasti grafiky a videa,
+grafické, zvukové a video formáty. MS PowerPoint, pravidla pro tvorbu prezentace, šablony, multimediální
+objekty a jejich využití v PowerPointu.
 
 ---
 ## TÓN A JEHO CHARAKTERISTIKA
