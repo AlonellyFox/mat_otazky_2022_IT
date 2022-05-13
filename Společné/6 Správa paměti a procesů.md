@@ -1,5 +1,8 @@
 # 6. Správa procesů a paměti
 
+> Typologie a charakteristika OS, evidence procesů, správa procesů, správce paměti, reálné metody přidělování
+paměti, virtuální paměť, defragmentace, segmentace, stránkování, ring 0-3, swapování, endianita.
+
 ## Primární funkce operačních systémů
 - správa paměti, procesů, periferií, systému, souborů, uživatelů, úloh
 - uživatelské rozhraní
