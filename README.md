@@ -15,7 +15,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 6 [Správa procesů a paměti v operačních systémech](Společné/6%20Správa%20paměti%20a%20procesů.md) - Zdražil P.
 - [x] 7 [Algoritmizace a programovací jazyk Python](Společné/7%20Algoritmizace.md) - Táborský R.
 - [x] 8 [Prezentační nástroj a multimédia](Společné/8%20Prezentační%20nástroj%20a%20multimédia.md) - Klícha M.
-- [ ] 9 Databáze - Stacha V.
+- [x] 9 Databáze **POUZE JAKO WORD** - Stacha V.
 - [x] 10 [Hypertext, kaskádové styly a webové skriptování](Společné/10%20Hypertext,%20kaskádové%20styly%20a%20webové%20skriptování.md) - Žluva A.
 - [x] 11 [Principy počítačových sítí LAN a WAN](Společné/11%20Principy%20počítačových%20sítí%20LAN%20a%20WAN.md) - Zdražil P.
 - [x] 12 [Bezpečnost v síťové infrastruktuře](Společné/12%20Bezpečnost%20v%20síťové%20infrastruktuře.md) - Kabeláč D.
