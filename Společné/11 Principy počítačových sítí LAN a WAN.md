@@ -132,6 +132,8 @@ připojených k síti. Nejčastěji se používá IPv4, ale kvůli nedostatku a
 IPv6 adresy mají délku 128bitů a zapisují se pomocí hexadecimální soustavy. 
 Každé čtyři bity jsou znázorněny hexadecimální hodnotou, každé čtyři 
 hexadecimální hodnoty jsou odděleny dvojtečkou, neoficiálně označovány jako hextet.
+/128 - Local host prefix
+FE80::/ - link local
 
 ---
 
@@ -143,8 +145,45 @@ Ale také dá administrátorovi možnost lepšího zabezpečení, protože můž
 podsítě mohou navzájem komunikovat. Administrátoři také mohou seskupit zařízení 
 do podsítě například podle patra budovy na kterém se nachází.
 
+---
+
+## Navázání komunikace
+3 way handshake.
+Skládá se ze 2 částí. SYN (navázání spojení) a ACK(potvrzení o syschronizaci) klienta a to stejné u serveru.
+TCP
+
+![3 way handshake](images/spojeni.png)
+
+---
+
+## Aplikační vrstva
+
+### DHCP
+Navázání spojení mezi klientem, který žádá o přidělení IP adresy v sítí.
+Skládá se ze 4 kroků.
+UDP
+
+![dhcp](images/dhcp.jpg)
+
+Další služby v aplikační vrstvě: WEB, souborové server(FTP), poštovní servery(email).
+
+Data jsou posílána pomocí tzv. soketu.
+
+![socket](images/socet.jpg)
+
+---
+
+## Porty
+Navazování: TCP - (Transmission Control Protocol) navazuje, UDP - (User Datagram Protocol) nenavazuje. Na transportní vrstvě.
+
+
+Čísla portů: 1-1023 - Well-know port, rezervované pro serverové služby; příklady: WEB: HTTP /443, File: FTP /20 a /21, Terminál: SSH /22, Telnet /23, Poštovní: POP3 /110.
+1023-65535 - porty pro různé aplikace.
+
+---
+
 ```
 Autor: Tomáš Mrázek
 Editace: Zdražil Patrik
-Datum: 1. 5. 2022
+Datum: 14. 5. 2022
 ```
