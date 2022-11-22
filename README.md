@@ -20,7 +20,7 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 11 [Principy počítačových sítí LAN a WAN](Společné/11%20Principy%20počítačových%20sítí%20LAN%20a%20WAN.md) - Zdražil P.
 - [x] 12 [Bezpečnost v síťové infrastruktuře](Společné/12%20Bezpečnost%20v%20síťové%20infrastruktuře.md) - Kabeláč D.
 - [x] 13 [Tvorba dokumentů v balíku kancelářských aplikací](Společné/13%20Tvorba%20dokumentů%20v%20balíku%20kancelářských%20aplikací.md) - Gargulák M.
-- [ ] 14 [Základy elektrotechniky a číslicové logiky](Společné/14%20Základy%20elektrotechniky%20a%20číslicové%20logiky.md) - Koňař L. ([latex verze](Společné/14%20Základy%20elektrotechniky%20a%20číslicové%20logiky%20-%20latex.md))
+- [x] 14 [Základy elektrotechniky a číslicové logiky](Společné/14%20Základy%20elektrotechniky%20a%20číslicové%20logiky.md) - Koňař L. *(údajně nedokončené, ale dostatečné)*
 ---
 ### Síťaři
 - [x] 15S [Směrování a směrovací protokoly](Síťaři/15S%20Směrování%20a%20směrovací%20protokoly.md) - Tománek J.
@@ -39,5 +39,9 @@ Prosím, pište to v md formátu - tutoriál [zde](https://www.youtube.com/watch
 - [x] 19P [Databázový systém MySQL](Programátoři/19P%20Databázový%20systém%20MySQL.md) - Hodulák F.
 - [x] 20P [Frameworky pro webová řešení](Programátoři/20P%20Frameworky%20pro%20webová%20řešení.md) - Táborský R.
 - [x] 21P [Frameworky pro desktopová řešení](Programátoři/21P%20Frameworky%20pro%20desktopová%20řešení.md) - Žluva A.
+
+## Info pro další ročníky
+
+Ne všechny otázky jsou hotové, problémy s otázkami jsou popsané v Issues. Forkujte a upravujte dle vlastních potřeb. Nás to přes maturitu dostalo, tak vás by mělo taky.
 
 ***Updated 13. 05. 2022***
